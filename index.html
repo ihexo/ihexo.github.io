@@ -8,9 +8,32 @@
     
 
 
+<!-- Baidu Push -->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- End Baidu Push -->
+
 
     <meta charset="utf-8">
     
+    <meta name="google-site-verification" content="true">
+    <meta name="baidu-site-verification" content="97dbRVWfVh" />
+    <meta name="sogou_site_verification" content="AIePRXkUI4"/>
+    
+    
+    <link rel="canonical" href="http://www.kotliner.cn/">
     
     
     <title>KotlinAndroid | 一个专注发布KotlinAndroid相关资源与优秀文章的技术网站</title>
@@ -30,10 +53,10 @@
 <meta name="twitter:title" content="KotlinAndroid">
 <meta name="twitter:description" content="talk is cheap,show me the girl.">
     
-        <link rel="alternate" type="application/atom+xml" title="KotlinAndroid" href="/atom.xml">
+        <link rel="alternative" href="/atom.xml" title="KotlinAndroid" type="application/atom+xml">
     
     <link rel="shortcut icon" href="/img/kotlin.png">
-    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <link rel="stylesheet" href="/css/style.css?v=1.5.2">
     <script>window.lazyScripts=[]</script>
 </head>
 
@@ -45,99 +68,93 @@
     <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
         <i class="icon icon-lg icon-close"></i>
     </a>
-    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+    <div class="brand-wrap" style="background-image:url(/img/kotlin_250x250.png)">
       <div class="brand">
         <a href="/" class="avatar waves-effect waves-circle waves-light">
-          <img src="/img/kotlin_250x250.png">
+          <img src="/assets/img/Kotlin-logo.png">
         </a>
         <hgroup class="introduce">
           <h5 class="nickname">itgoyo</h5>
-          <a href="mailto:itgoyo@gmail.com" title="itgoyo@gmail.com" class="mail">itgoyo@gmail.com</a>
+          <a href="mailto:kotlin@kotliner.cn" title="kotlin@kotliner.cn" class="mail">kotlin@kotliner.cn</a>
         </hgroup>
       </div>
     </div>
-
     <div class="scroll-wrap flex-col">
       <ul class="nav">
-        
-            <li class="waves-block waves-effect">
-              <a href="/website"  >
-                <i class="icon icon-lg icon-html5"></i>
-                官网
-
-              </a>
-            </li>
-
         
             <li class="waves-block waves-effect active">
               <a href="/"  >
                 <i class="icon icon-lg icon-home"></i>
                 主页
-
               </a>
             </li>
-
+        
+            <li class="waves-block waves-effect">
+              <a href="https://www.kotlincn.net"  >
+                <i class="icon icon-lg icon-certificate"></i>
+                官网
+              </a>
+            </li>
         
             <li class="waves-block waves-effect">
               <a href="/archives"  >
                 <i class="icon icon-lg icon-archives"></i>
                 所有文章
-
               </a>
             </li>
-
+        
+            <li class="waves-block waves-effect">
+              <a href="/authors"  >
+                <i class="icon icon-lg icon-user"></i>
+                所有作者
+              </a>
+            </li>
         
             <li class="waves-block waves-effect">
               <a href="/tags"  >
                 <i class="icon icon-lg icon-tags"></i>
                 标签
-
               </a>
             </li>
-
         
             <li class="waves-block waves-effect">
               <a href="/categories"  >
                 <i class="icon icon-lg icon-th-list"></i>
                 分类
-
               </a>
             </li>
-
         
             <li class="waves-block waves-effect">
-              <a href="https://github.com/itgoyo" target="_blank" >
-                <i class="icon icon-lg icon-github"></i>
-                Github
-
+              <a href="/about"  >
+                <i class="icon icon-lg icon-info"></i>
+                关于我们
               </a>
             </li>
-
         
             <li class="waves-block waves-effect">
-              <a href="http://www.weibo.com/kotlinandroid" target="_blank" >
-                <i class="icon icon-lg icon-weibo"></i>
-                Weibo
-
+              <a href="/beijing/"  >
+                <i class="icon icon-lg icon-map-marker beijing"></i>
+                北京分会
               </a>
             </li>
-
         
             <li class="waves-block waves-effect">
-              <a href="/resume"  >
-                <i class="icon icon-lg icon-link"></i>
-                Résumé
-
+              <a href="/chengdu/"  >
+                <i class="icon icon-lg icon-map-marker chengdu"></i>
+                成都分会
               </a>
             </li>
-
         
-        <!-- music-->
+            <li class="waves-block waves-effect">
+              <a href="http://shanghai.kotliner.cn"  >
+                <i class="icon icon-lg icon-map-marker shanghai"></i>
+                上海分会
+              </a>
+            </li>
+        
       </ul>
-
     </div>
   </div>
-
 </aside>
 
     <main id="main">
@@ -178,7 +195,6 @@
 
     
 
-
 </header>
 
 <div class="container body-wrap">
@@ -190,7 +206,7 @@
   class="article-card article-type-post" itemprop="blogPost">
 
     <div class="post-meta">
-        <time class="post-time" title="2017-04-25 21:19:00" datetime="2017-04-25T13:19:00.000Z"  itemprop="datePublished">2017-04-25</time>
+        <time class="post-time" title="2017年04月25日 21:19" datetime="2017-04-25T13:19:00.000Z"  itemprop="datePublished">2017-04-25</time>
 
         
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
@@ -220,7 +236,7 @@
     
 
         <a href="/2017/04/25/Kotlin 1.1.2 is out/" class="post-more waves-effect waves-button">
-            Continue reading...
+            阅读全文...
         </a>
     </div>
     
@@ -233,7 +249,7 @@
   class="article-card article-type-post" itemprop="blogPost">
 
     <div class="post-meta">
-        <time class="post-time" title="2017-04-06 23:21:00" datetime="2017-04-06T15:21:00.000Z"  itemprop="datePublished">2017-04-06</time>
+        <time class="post-time" title="2017年04月06日 23:21" datetime="2017-04-06T15:21:00.000Z"  itemprop="datePublished">2017-04-06</time>
 
         
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
@@ -263,7 +279,7 @@
     
 
         <a href="/2017/04/06/Kotlin 1.1 Event Report/" class="post-more waves-effect waves-button">
-            Continue reading...
+            阅读全文...
         </a>
     </div>
     
@@ -276,7 +292,7 @@
   class="article-card article-type-post" itemprop="blogPost">
 
     <div class="post-meta">
-        <time class="post-time" title="2017-04-05 16:13:00" datetime="2017-04-05T08:13:00.000Z"  itemprop="datePublished">2017-04-05</time>
+        <time class="post-time" title="2017年04月05日 16:13" datetime="2017-04-05T08:13:00.000Z"  itemprop="datePublished">2017-04-05</time>
 
         
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
@@ -310,7 +326,7 @@
     
 
         <a href="/2017/04/05/Kotlin 1.1 is also for Android Developers/" class="post-more waves-effect waves-button">
-            Continue reading...
+            阅读全文...
         </a>
     </div>
     
@@ -329,7 +345,7 @@
   class="article-card article-type-post" itemprop="blogPost">
 
     <div class="post-meta">
-        <time class="post-time" title="2017-03-21 21:51:00" datetime="2017-03-21T13:51:00.000Z"  itemprop="datePublished">2017-03-21</time>
+        <time class="post-time" title="2017年03月21日 21:51" datetime="2017-03-21T13:51:00.000Z"  itemprop="datePublished">2017-03-21</time>
 
         
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
@@ -359,7 +375,7 @@
     
 
         <a href="/2017/03/21/Kotlin 1.1 Event in Your City/" class="post-more waves-effect waves-button">
-            Continue reading...
+            阅读全文...
         </a>
     </div>
     
@@ -372,7 +388,7 @@
   class="article-card article-type-post" itemprop="blogPost">
 
     <div class="post-meta">
-        <time class="post-time" title="2017-03-15 22:21:00" datetime="2017-03-15T14:21:00.000Z"  itemprop="datePublished">2017-03-15</time>
+        <time class="post-time" title="2017年03月15日 22:21" datetime="2017-03-15T14:21:00.000Z"  itemprop="datePublished">2017-03-15</time>
 
         
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
@@ -402,7 +418,7 @@
     
 
         <a href="/2017/03/15/Kotlin 1.0.7 is out/" class="post-more waves-effect waves-button">
-            Continue reading...
+            阅读全文...
         </a>
     </div>
     
@@ -415,7 +431,7 @@
   class="article-card article-type-post" itemprop="blogPost">
 
     <div class="post-meta">
-        <time class="post-time" title="2017-03-14 20:29:00" datetime="2017-03-14T12:29:00.000Z"  itemprop="datePublished">2017-03-14</time>
+        <time class="post-time" title="2017年03月14日 20:29" datetime="2017-03-14T12:29:00.000Z"  itemprop="datePublished">2017-03-14</time>
 
         
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
@@ -449,7 +465,7 @@ Kotlin插件现已可以通过Gradle插件依赖添加使用。详情可参阅�
     
 
         <a href="/2017/03/14/Kotlin 1.1.1 is out/" class="post-more waves-effect waves-button">
-            Continue reading...
+            阅读全文...
         </a>
     </div>
     
@@ -462,7 +478,7 @@ Kotlin插件现已可以通过Gradle插件依赖添加使用。详情可参阅�
   class="article-card article-type-post" itemprop="blogPost">
 
     <div class="post-meta">
-        <time class="post-time" title="2017-03-06 17:43:00" datetime="2017-03-06T09:43:00.000Z"  itemprop="datePublished">2017-03-06</time>
+        <time class="post-time" title="2017年03月06日 17:43" datetime="2017-03-06T09:43:00.000Z"  itemprop="datePublished">2017-03-06</time>
 
         
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
@@ -498,7 +514,7 @@ Kotlin插件现已可以通过Gradle插件依赖添加使用。详情可参阅�
     
 
         <a href="/2017/03/06/Kotlin 1.1 Event/" class="post-more waves-effect waves-button">
-            Continue reading...
+            阅读全文...
         </a>
     </div>
     
@@ -511,7 +527,7 @@ Kotlin插件现已可以通过Gradle插件依赖添加使用。详情可参阅�
   class="article-card article-type-post" itemprop="blogPost">
 
     <div class="post-meta">
-        <time class="post-time" title="2017-03-04 08:46:34" datetime="2017-03-04T00:46:34.000Z"  itemprop="datePublished">2017-03-04</time>
+        <time class="post-time" title="2017年03月04日 8:46" datetime="2017-03-04T00:46:34.000Z"  itemprop="datePublished">2017-03-04</time>
 
         
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
@@ -543,7 +559,7 @@ tips: 本文有较多外链，公众号阅读时无法跳转，如有需要，�
     
 
         <a href="/2017/03/04/Kotlin 1.1/" class="post-more waves-effect waves-button">
-            Continue reading...
+            阅读全文...
         </a>
     </div>
     
@@ -562,7 +578,7 @@ tips: 本文有较多外链，公众号阅读时无法跳转，如有需要，�
   class="article-card article-type-post" itemprop="blogPost">
 
     <div class="post-meta">
-        <time class="post-time" title="2017-03-01 17:12:00" datetime="2017-03-01T09:12:00.000Z"  itemprop="datePublished">2017-03-01</time>
+        <time class="post-time" title="2017年03月01日 17:12" datetime="2017-03-01T09:12:00.000Z"  itemprop="datePublished">2017-03-01</time>
 
         
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
@@ -600,7 +616,7 @@ tips: 本文有较多外链，公众号阅读时无法跳转，如有需要，�
     
 
         <a href="/2017/03/01/Kotlin 1.1 Released with JavaScript Support, Coroutines and more/" class="post-more waves-effect waves-button">
-            Continue reading...
+            阅读全文...
         </a>
     </div>
     
@@ -613,7 +629,7 @@ tips: 本文有较多外链，公众号阅读时无法跳转，如有需要，�
   class="article-card article-type-post" itemprop="blogPost">
 
     <div class="post-meta">
-        <time class="post-time" title="2017-02-20 10:32:32" datetime="2017-02-20T02:32:32.000Z"  itemprop="datePublished">2017-02-20</time>
+        <time class="post-time" title="2017年02月20日 10:32" datetime="2017-02-20T02:32:32.000Z"  itemprop="datePublished">2017-02-20</time>
 
         
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/心路历程/">心路历程</a></li></ul>
@@ -651,7 +667,7 @@ tips: 本文有较多外链，公众号阅读时无法跳转，如有需要，�
     
 
         <a href="/2017/02/20/Kotlin 1.1：我们在路上/" class="post-more waves-effect waves-button">
-            Continue reading...
+            阅读全文...
         </a>
     </div>
     
@@ -691,16 +707,20 @@ tips: 本文有较多外链，公众号阅读时无法跳转，如有需要，�
 
 
         <p>
-            
-                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
-            
-            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+            <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            <span>博客内容遵循 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0协议</a></span>
         </p>
     </div>
     <div class="bottom">
         <p>
+            <span class="copyright-text">京ICP备16022265号-2&nbsp;</span>
+            <span>KotlinAndroid &copy; 2017</span>
+        </p>
+        <p>
+            本站由<a style="display:inline" href="https://account.ucloud.cn/cas/register?utm_source=kotliner&utm_medium=content_pic_pc&utm_campaign=zanzhu&ytag=kotliner">UCloud 提供赞助 - 注册即送 50 元代金券</a>
+        </p>
+        <p>
             <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
-            <span>itgoyo &copy; 2015 - 2017</span>  &nbsp&nbsp&nbsp 作者Github地址 欢迎关注 <a href="https://github.com/itgoyo" target="_blank">itgoyo</a>
         </p>
     </div>
 </footer>
@@ -714,7 +734,7 @@ tips: 本文有较多外链，公众号阅读时无法跳转，如有需要，�
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://kotlinandroid.net/&title=KotlinAndroid&pic=https://kotlinandroid.net/img/kotlin_250x250.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://kotlinandroid.net/&title=KotlinAndroid&pic=https://kotlinandroid.net/assets/img/Kotlin-logo.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -762,9 +782,11 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 
 
 
+lazyScripts.push('//s95.cnzz.com/z_stat.php?id=1261686164&web_id=1261686164')
+
 </script>
 
-<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+<script src="/js/main.min.js?v=1.5.2"></script>
 
 
 <div class="search-panel" id="search-panel">
@@ -784,8 +806,7 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 </li>
 </template>
 
-<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
-
+<script src="/js/search.min.js?v=1.5.2" async></script>
 
 
 
@@ -800,10 +821,10 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
     var OriginTitile = document.title, titleTime;
     document.addEventListener('visibilitychange', function() {
         if (document.hidden) {
-            document.title = '点我有惊喜...';
+            document.title = 'Kotlin 博客';
             clearTimeout(titleTime);
         } else {
-            document.title = '｡◕‿◕｡';
+            document.title = 'Kotlin 博客';
             titleTime = setTimeout(function() {
                 document.title = OriginTitile;
             },2000);

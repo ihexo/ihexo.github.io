@@ -8,9 +8,32 @@
     
 
 
+<!-- Baidu Push -->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- End Baidu Push -->
+
 
     <meta charset="utf-8">
     
+    <meta name="google-site-verification" content="true">
+    <meta name="baidu-site-verification" content="97dbRVWfVh" />
+    <meta name="sogou_site_verification" content="AIePRXkUI4"/>
+    
+    
+    <link rel="canonical" href="http://www.kotliner.cn/404.html">
     
     
     <title>404 Not Found：该页无法显示 | KotlinAndroid | 一个专注发布KotlinAndroid相关资源与优秀文章的技术网站</title>
@@ -36,10 +59,10 @@
 <meta name="twitter:description" content=".article-header {         padding: 0;         padding-top: 26px;         border-left: none;         text-align: center;     }     .article-header:hover {         border-left: none;     }     .art">
 <meta name="twitter:image" content="http://i1.piimg.com/567571/0ec0c6b63c8186bb.jpg">
     
-        <link rel="alternate" type="application/atom+xml" title="KotlinAndroid" href="/atom.xml">
+        <link rel="alternative" href="/atom.xml" title="KotlinAndroid" type="application/atom+xml">
     
     <link rel="shortcut icon" href="/img/kotlin.png">
-    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <link rel="stylesheet" href="/css/style.css?v=1.5.2">
     <script>window.lazyScripts=[]</script>
 </head>
 
@@ -51,99 +74,93 @@
     <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
         <i class="icon icon-lg icon-close"></i>
     </a>
-    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+    <div class="brand-wrap" style="background-image:url(/img/kotlin_250x250.png)">
       <div class="brand">
         <a href="/" class="avatar waves-effect waves-circle waves-light">
-          <img src="/img/kotlin_250x250.png">
+          <img src="/assets/img/Kotlin-logo.png">
         </a>
         <hgroup class="introduce">
           <h5 class="nickname">itgoyo</h5>
-          <a href="mailto:itgoyo@gmail.com" title="itgoyo@gmail.com" class="mail">itgoyo@gmail.com</a>
+          <a href="mailto:kotlin@kotliner.cn" title="kotlin@kotliner.cn" class="mail">kotlin@kotliner.cn</a>
         </hgroup>
       </div>
     </div>
-
     <div class="scroll-wrap flex-col">
       <ul class="nav">
-        
-            <li class="waves-block waves-effect">
-              <a href="/website"  >
-                <i class="icon icon-lg icon-html5"></i>
-                官网
-
-              </a>
-            </li>
-
         
             <li class="waves-block waves-effect">
               <a href="/"  >
                 <i class="icon icon-lg icon-home"></i>
                 主页
-
               </a>
             </li>
-
+        
+            <li class="waves-block waves-effect">
+              <a href="https://www.kotlincn.net"  >
+                <i class="icon icon-lg icon-certificate"></i>
+                官网
+              </a>
+            </li>
         
             <li class="waves-block waves-effect">
               <a href="/archives"  >
                 <i class="icon icon-lg icon-archives"></i>
                 所有文章
-
               </a>
             </li>
-
+        
+            <li class="waves-block waves-effect">
+              <a href="/authors"  >
+                <i class="icon icon-lg icon-user"></i>
+                所有作者
+              </a>
+            </li>
         
             <li class="waves-block waves-effect">
               <a href="/tags"  >
                 <i class="icon icon-lg icon-tags"></i>
                 标签
-
               </a>
             </li>
-
         
             <li class="waves-block waves-effect">
               <a href="/categories"  >
                 <i class="icon icon-lg icon-th-list"></i>
                 分类
-
               </a>
             </li>
-
         
             <li class="waves-block waves-effect">
-              <a href="https://github.com/itgoyo" target="_blank" >
-                <i class="icon icon-lg icon-github"></i>
-                Github
-
+              <a href="/about"  >
+                <i class="icon icon-lg icon-info"></i>
+                关于我们
               </a>
             </li>
-
         
             <li class="waves-block waves-effect">
-              <a href="http://www.weibo.com/kotlinandroid" target="_blank" >
-                <i class="icon icon-lg icon-weibo"></i>
-                Weibo
-
+              <a href="/beijing/"  >
+                <i class="icon icon-lg icon-map-marker beijing"></i>
+                北京分会
               </a>
             </li>
-
         
             <li class="waves-block waves-effect">
-              <a href="/resume"  >
-                <i class="icon icon-lg icon-link"></i>
-                Résumé
-
+              <a href="/chengdu/"  >
+                <i class="icon icon-lg icon-map-marker chengdu"></i>
+                成都分会
               </a>
             </li>
-
         
-        <!-- music-->
+            <li class="waves-block waves-effect">
+              <a href="http://shanghai.kotliner.cn"  >
+                <i class="icon icon-lg icon-map-marker shanghai"></i>
+                上海分会
+              </a>
+            </li>
+        
       </ul>
-
     </div>
   </div>
-
 </aside>
 
     <main id="main">
@@ -181,7 +198,6 @@
     </div>
 
     
-
 
 </header>
 
@@ -279,11 +295,11 @@
 
         
         <div class="card page-about-me flex-row">
-            <a href="/" class="avatar waves-effect waves-circle waves-light"><img src="/img/kotlin_250x250.png"></a>
+            <a href="/" class="avatar waves-effect waves-circle waves-light"><img src="/assets/img/Kotlin-logo.png"></a>
             <div class="content flex-col">
                 <p><strong>itgoyo</strong></p>
                 <p><em>一个专注发布KotlinAndroid相关资源与优秀文章的技术网站</em></p>
-                <p>用户页面中作者相关的描述性文字，如不需要设为 false</p>
+                <p>我们是来自全国各地的 Kotlin 爱好者，期待你的加入！</p>
             </div>
 
             
@@ -293,7 +309,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://kotlinandroid.net/404.html&title=《404 Not Found：该页无法显示》 — KotlinAndroid&pic=https://kotlinandroid.net/img/kotlin_250x250.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://kotlinandroid.net/404.html&title=《404 Not Found：该页无法显示》 — KotlinAndroid&pic=https://kotlinandroid.net/assets/img/Kotlin-logo.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -352,20 +368,21 @@
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <h3 class="reward-title">
         <i class="icon icon-quote-left"></i>
-        打赏点糖果，维持网站运转
+        Have a nice Kotlin!
         <i class="icon icon-quote-right"></i>
     </h3>
     <ul class="reward-items">
         
+        
         <li>
-            <img src="/img/zhifubao.png" title="微信打赏二维码" alt="微信打赏二维码">
+            <img src="/assets/img/wechat.jpg" title="微信打赏二维码" alt="微信打赏二维码">
             <p>微信</p>
         </li>
         
 
         
         <li>
-            <img src="/img/zhifubao.png" title="支付宝打赏二维码" alt="支付宝打赏二维码">
+            <img src="/assets/img/alipay.jpg" title="支付宝打赏二维码" alt="支付宝打赏二维码">
             <p>支付宝</p>
         </li>
         
@@ -389,16 +406,20 @@
 
 
         <p>
-            
-                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
-            
-            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+            <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            <span>博客内容遵循 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0协议</a></span>
         </p>
     </div>
     <div class="bottom">
         <p>
+            <span class="copyright-text">京ICP备16022265号-2&nbsp;</span>
+            <span>KotlinAndroid &copy; 2017</span>
+        </p>
+        <p>
+            本站由<a style="display:inline" href="https://account.ucloud.cn/cas/register?utm_source=kotliner&utm_medium=content_pic_pc&utm_campaign=zanzhu&ytag=kotliner">UCloud 提供赞助 - 注册即送 50 元代金券</a>
+        </p>
+        <p>
             <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
-            <span>itgoyo &copy; 2015 - 2017</span>  &nbsp&nbsp&nbsp 作者Github地址 欢迎关注 <a href="https://github.com/itgoyo" target="_blank">itgoyo</a>
         </p>
     </div>
 </footer>
@@ -412,7 +433,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://kotlinandroid.net/404.html&title=《404 Not Found：该页无法显示》 — KotlinAndroid&pic=https://kotlinandroid.net/img/kotlin_250x250.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://kotlinandroid.net/404.html&title=《404 Not Found：该页无法显示》 — KotlinAndroid&pic=https://kotlinandroid.net/assets/img/Kotlin-logo.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -460,9 +481,11 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
 
 
 
+lazyScripts.push('//s95.cnzz.com/z_stat.php?id=1261686164&web_id=1261686164')
+
 </script>
 
-<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+<script src="/js/main.min.js?v=1.5.2"></script>
 
 
 <div class="search-panel" id="search-panel">
@@ -482,8 +505,7 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
 </li>
 </template>
 
-<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
-
+<script src="/js/search.min.js?v=1.5.2" async></script>
 
 
 
@@ -498,10 +520,10 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
     var OriginTitile = document.title, titleTime;
     document.addEventListener('visibilitychange', function() {
         if (document.hidden) {
-            document.title = '点我有惊喜...';
+            document.title = 'Kotlin 博客';
             clearTimeout(titleTime);
         } else {
-            document.title = '｡◕‿◕｡';
+            document.title = 'Kotlin 博客';
             titleTime = setTimeout(function() {
                 document.title = OriginTitile;
             },2000);
