@@ -4,9 +4,9 @@
   <subtitle>一个专注发布KotlinAndroid相关资源与优秀文章的技术网站</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://github.com/itgoyo/"/>
+  <link href="https://github.com/ihexo/"/>
   <updated>2017-06-19T04:50:23.000Z</updated>
-  <id>https://github.com/itgoyo/</id>
+  <id>https://github.com/ihexo/</id>
   
   <author>
     <name>itgoyo</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>[译]Kotlin 1.1.2 is out</title>
-    <link href="https://github.com/itgoyo/2017/04/25/Kotlin%201.1.2%20is%20out/"/>
-    <id>https://github.com/itgoyo/2017/04/25/Kotlin 1.1.2 is out/</id>
+    <link href="https://github.com/ihexo/2017/04/25/Kotlin%201.1.2%20is%20out/"/>
+    <id>https://github.com/ihexo/2017/04/25/Kotlin 1.1.2 is out/</id>
     <published>2017-04-25T13:19:00.000Z</published>
     <updated>2017-06-19T04:50:23.000Z</updated>
     
@@ -54,15 +54,15 @@
     
     </summary>
     
-      <category term="官方动态" scheme="https://github.com/itgoyo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
+      <category term="官方动态" scheme="https://github.com/ihexo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
     
     
   </entry>
   
   <entry>
     <title>[译]Kotlin 1.1 Event Report</title>
-    <link href="https://github.com/itgoyo/2017/04/06/Kotlin%201.1%20Event%20Report/"/>
-    <id>https://github.com/itgoyo/2017/04/06/Kotlin 1.1 Event Report/</id>
+    <link href="https://github.com/ihexo/2017/04/06/Kotlin%201.1%20Event%20Report/"/>
+    <id>https://github.com/ihexo/2017/04/06/Kotlin 1.1 Event Report/</id>
     <published>2017-04-06T15:21:00.000Z</published>
     <updated>2017-06-19T04:50:23.000Z</updated>
     
@@ -84,15 +84,15 @@
     
     </summary>
     
-      <category term="官方动态" scheme="https://github.com/itgoyo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
+      <category term="官方动态" scheme="https://github.com/ihexo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
     
     
   </entry>
   
   <entry>
     <title>[译]Kotlin 1.1 也适用于 Android 开发者</title>
-    <link href="https://github.com/itgoyo/2017/04/05/Kotlin%201.1%20is%20also%20for%20Android%20Developers/"/>
-    <id>https://github.com/itgoyo/2017/04/05/Kotlin 1.1 is also for Android Developers/</id>
+    <link href="https://github.com/ihexo/2017/04/05/Kotlin%201.1%20is%20also%20for%20Android%20Developers/"/>
+    <id>https://github.com/ihexo/2017/04/05/Kotlin 1.1 is also for Android Developers/</id>
     <published>2017-04-05T08:13:00.000Z</published>
     <updated>2017-06-19T04:50:23.000Z</updated>
     
@@ -174,21 +174,21 @@
     
     </summary>
     
-      <category term="官方动态" scheme="https://github.com/itgoyo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
+      <category term="官方动态" scheme="https://github.com/ihexo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
     
     
-      <category term="Coroutine" scheme="https://github.com/itgoyo/tags/Coroutine/"/>
+      <category term="Coroutine" scheme="https://github.com/ihexo/tags/Coroutine/"/>
     
-      <category term="Android" scheme="https://github.com/itgoyo/tags/Android/"/>
+      <category term="Android" scheme="https://github.com/ihexo/tags/Android/"/>
     
-      <category term="typealias" scheme="https://github.com/itgoyo/tags/typealias/"/>
+      <category term="typealias" scheme="https://github.com/ihexo/tags/typealias/"/>
     
   </entry>
   
   <entry>
     <title>[译]Kotlin 1.1 Event in Your City</title>
-    <link href="https://github.com/itgoyo/2017/03/21/Kotlin%201.1%20Event%20in%20Your%20City/"/>
-    <id>https://github.com/itgoyo/2017/03/21/Kotlin 1.1 Event in Your City/</id>
+    <link href="https://github.com/ihexo/2017/03/21/Kotlin%201.1%20Event%20in%20Your%20City/"/>
+    <id>https://github.com/ihexo/2017/03/21/Kotlin 1.1 Event in Your City/</id>
     <published>2017-03-21T13:51:00.000Z</published>
     <updated>2017-06-19T04:50:23.000Z</updated>
     
@@ -205,15 +205,15 @@
     
     </summary>
     
-      <category term="官方动态" scheme="https://github.com/itgoyo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
+      <category term="官方动态" scheme="https://github.com/ihexo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
     
     
   </entry>
   
   <entry>
     <title>[译]Kotlin 1.0.7 is out</title>
-    <link href="https://github.com/itgoyo/2017/03/15/Kotlin%201.0.7%20is%20out/"/>
-    <id>https://github.com/itgoyo/2017/03/15/Kotlin 1.0.7 is out/</id>
+    <link href="https://github.com/ihexo/2017/03/15/Kotlin%201.0.7%20is%20out/"/>
+    <id>https://github.com/ihexo/2017/03/15/Kotlin 1.0.7 is out/</id>
     <published>2017-03-15T14:21:00.000Z</published>
     <updated>2017-06-19T04:50:23.000Z</updated>
     
@@ -226,15 +226,15 @@
     
     </summary>
     
-      <category term="官方动态" scheme="https://github.com/itgoyo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
+      <category term="官方动态" scheme="https://github.com/ihexo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
     
     
   </entry>
   
   <entry>
     <title>[译]Kotlin 1.1.1 is out</title>
-    <link href="https://github.com/itgoyo/2017/03/14/Kotlin%201.1.1%20is%20out/"/>
-    <id>https://github.com/itgoyo/2017/03/14/Kotlin 1.1.1 is out/</id>
+    <link href="https://github.com/ihexo/2017/03/14/Kotlin%201.1.1%20is%20out/"/>
+    <id>https://github.com/ihexo/2017/03/14/Kotlin 1.1.1 is out/</id>
     <published>2017-03-14T12:29:00.000Z</published>
     <updated>2017-06-19T04:50:23.000Z</updated>
     
@@ -255,15 +255,15 @@
     
     </summary>
     
-      <category term="官方动态" scheme="https://github.com/itgoyo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
+      <category term="官方动态" scheme="https://github.com/ihexo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
     
     
   </entry>
   
   <entry>
     <title>[译]Kotlin 1.1 Event</title>
-    <link href="https://github.com/itgoyo/2017/03/06/Kotlin%201.1%20Event/"/>
-    <id>https://github.com/itgoyo/2017/03/06/Kotlin 1.1 Event/</id>
+    <link href="https://github.com/ihexo/2017/03/06/Kotlin%201.1%20Event/"/>
+    <id>https://github.com/ihexo/2017/03/06/Kotlin 1.1 Event/</id>
     <published>2017-03-06T09:43:00.000Z</published>
     <updated>2017-06-19T04:50:23.000Z</updated>
     
@@ -306,15 +306,15 @@
     
     </summary>
     
-      <category term="官方动态" scheme="https://github.com/itgoyo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
+      <category term="官方动态" scheme="https://github.com/ihexo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
     
     
   </entry>
   
   <entry>
     <title>Kotlin 1.1</title>
-    <link href="https://github.com/itgoyo/2017/03/04/Kotlin%201.1/"/>
-    <id>https://github.com/itgoyo/2017/03/04/Kotlin 1.1/</id>
+    <link href="https://github.com/ihexo/2017/03/04/Kotlin%201.1/"/>
+    <id>https://github.com/ihexo/2017/03/04/Kotlin 1.1/</id>
     <published>2017-03-04T00:46:34.000Z</published>
     <updated>2017-06-19T04:50:23.000Z</updated>
     
@@ -403,23 +403,23 @@
     
     </summary>
     
-      <category term="官方动态" scheme="https://github.com/itgoyo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
+      <category term="官方动态" scheme="https://github.com/ihexo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
     
     
-      <category term="Coroutine" scheme="https://github.com/itgoyo/tags/Coroutine/"/>
+      <category term="Coroutine" scheme="https://github.com/ihexo/tags/Coroutine/"/>
     
-      <category term="JavaScript" scheme="https://github.com/itgoyo/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://github.com/ihexo/tags/JavaScript/"/>
     
-      <category term="中文支持" scheme="https://github.com/itgoyo/tags/%E4%B8%AD%E6%96%87%E6%94%AF%E6%8C%81/"/>
+      <category term="中文支持" scheme="https://github.com/ihexo/tags/%E4%B8%AD%E6%96%87%E6%94%AF%E6%8C%81/"/>
     
-      <category term="Kotlin元年" scheme="https://github.com/itgoyo/tags/Kotlin%E5%85%83%E5%B9%B4/"/>
+      <category term="Kotlin元年" scheme="https://github.com/ihexo/tags/Kotlin%E5%85%83%E5%B9%B4/"/>
     
   </entry>
   
   <entry>
     <title>[译]Kotlin 1.1 发布啦！JavaScript，Coroutine 还有更多你想要的</title>
-    <link href="https://github.com/itgoyo/2017/03/01/Kotlin%201.1%20Released%20with%20JavaScript%20Support,%20Coroutines%20and%20more/"/>
-    <id>https://github.com/itgoyo/2017/03/01/Kotlin 1.1 Released with JavaScript Support, Coroutines and more/</id>
+    <link href="https://github.com/ihexo/2017/03/01/Kotlin%201.1%20Released%20with%20JavaScript%20Support,%20Coroutines%20and%20more/"/>
+    <id>https://github.com/ihexo/2017/03/01/Kotlin 1.1 Released with JavaScript Support, Coroutines and more/</id>
     <published>2017-03-01T09:12:00.000Z</published>
     <updated>2017-06-19T04:50:23.000Z</updated>
     
@@ -491,15 +491,15 @@
     
     </summary>
     
-      <category term="官方动态" scheme="https://github.com/itgoyo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
+      <category term="官方动态" scheme="https://github.com/ihexo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
     
     
   </entry>
   
   <entry>
     <title>Kotlin 1.1：我们在路上</title>
-    <link href="https://github.com/itgoyo/2017/02/20/Kotlin%201.1%EF%BC%9A%E6%88%91%E4%BB%AC%E5%9C%A8%E8%B7%AF%E4%B8%8A/"/>
-    <id>https://github.com/itgoyo/2017/02/20/Kotlin 1.1：我们在路上/</id>
+    <link href="https://github.com/ihexo/2017/02/20/Kotlin%201.1%EF%BC%9A%E6%88%91%E4%BB%AC%E5%9C%A8%E8%B7%AF%E4%B8%8A/"/>
+    <id>https://github.com/ihexo/2017/02/20/Kotlin 1.1：我们在路上/</id>
     <published>2017-02-20T02:32:32.000Z</published>
     <updated>2017-06-19T04:50:23.000Z</updated>
     
@@ -572,17 +572,17 @@
     
     </summary>
     
-      <category term="心路历程" scheme="https://github.com/itgoyo/categories/%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B/"/>
+      <category term="心路历程" scheme="https://github.com/ihexo/categories/%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B/"/>
     
     
-      <category term="成长" scheme="https://github.com/itgoyo/tags/%E6%88%90%E9%95%BF/"/>
+      <category term="成长" scheme="https://github.com/ihexo/tags/%E6%88%90%E9%95%BF/"/>
     
   </entry>
   
   <entry>
     <title>[译]Kotlin 1.1 候选版本来啦</title>
-    <link href="https://github.com/itgoyo/2017/02/17/Kotlin%201.1%20Release%20Candidate%20is%20Here/"/>
-    <id>https://github.com/itgoyo/2017/02/17/Kotlin 1.1 Release Candidate is Here/</id>
+    <link href="https://github.com/ihexo/2017/02/17/Kotlin%201.1%20Release%20Candidate%20is%20Here/"/>
+    <id>https://github.com/ihexo/2017/02/17/Kotlin 1.1 Release Candidate is Here/</id>
     <published>2017-02-17T05:37:00.000Z</published>
     <updated>2017-06-19T04:50:23.000Z</updated>
     
@@ -608,15 +608,15 @@
     
     </summary>
     
-      <category term="官方动态" scheme="https://github.com/itgoyo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
+      <category term="官方动态" scheme="https://github.com/ihexo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
     
     
   </entry>
   
   <entry>
     <title>Kotlin 1.1 Beta 2 发布~</title>
-    <link href="https://github.com/itgoyo/2017/02/06/Kotlin%201.1%20Beta%202%20%E5%8F%91%E5%B8%83~/"/>
-    <id>https://github.com/itgoyo/2017/02/06/Kotlin 1.1 Beta 2 发布~/</id>
+    <link href="https://github.com/ihexo/2017/02/06/Kotlin%201.1%20Beta%202%20%E5%8F%91%E5%B8%83~/"/>
+    <id>https://github.com/ihexo/2017/02/06/Kotlin 1.1 Beta 2 发布~/</id>
     <published>2017-02-06T00:14:15.000Z</published>
     <updated>2017-06-19T04:50:23.000Z</updated>
     
@@ -642,19 +642,19 @@
     
     </summary>
     
-      <category term="官方动态" scheme="https://github.com/itgoyo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
+      <category term="官方动态" scheme="https://github.com/ihexo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
     
     
-      <category term="Coroutine" scheme="https://github.com/itgoyo/tags/Coroutine/"/>
+      <category term="Coroutine" scheme="https://github.com/ihexo/tags/Coroutine/"/>
     
-      <category term="兼容" scheme="https://github.com/itgoyo/tags/%E5%85%BC%E5%AE%B9/"/>
+      <category term="兼容" scheme="https://github.com/ihexo/tags/%E5%85%BC%E5%AE%B9/"/>
     
   </entry>
   
   <entry>
     <title>Kotlin 1.0.6</title>
-    <link href="https://github.com/itgoyo/2017/01/02/Kotlin%201.0.6/"/>
-    <id>https://github.com/itgoyo/2017/01/02/Kotlin 1.0.6/</id>
+    <link href="https://github.com/ihexo/2017/01/02/Kotlin%201.0.6/"/>
+    <id>https://github.com/ihexo/2017/01/02/Kotlin 1.0.6/</id>
     <published>2017-01-02T08:22:57.000Z</published>
     <updated>2017-06-19T04:50:23.000Z</updated>
     
@@ -739,21 +739,21 @@
     
     </summary>
     
-      <category term="官方动态" scheme="https://github.com/itgoyo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
+      <category term="官方动态" scheme="https://github.com/ihexo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
     
     
-      <category term="AllOpen" scheme="https://github.com/itgoyo/tags/AllOpen/"/>
+      <category term="AllOpen" scheme="https://github.com/ihexo/tags/AllOpen/"/>
     
-      <category term="NoArg" scheme="https://github.com/itgoyo/tags/NoArg/"/>
+      <category term="NoArg" scheme="https://github.com/ihexo/tags/NoArg/"/>
     
-      <category term="Kapt" scheme="https://github.com/itgoyo/tags/Kapt/"/>
+      <category term="Kapt" scheme="https://github.com/ihexo/tags/Kapt/"/>
     
   </entry>
   
   <entry>
     <title>[译]Kotlin 1.0 Beta 3 发布啦!</title>
-    <link href="https://github.com/itgoyo/2015/12/07/Kotlin%201.0%20Beta%203%20is%20Out!/"/>
-    <id>https://github.com/itgoyo/2015/12/07/Kotlin 1.0 Beta 3 is Out!/</id>
+    <link href="https://github.com/ihexo/2015/12/07/Kotlin%201.0%20Beta%203%20is%20Out!/"/>
+    <id>https://github.com/ihexo/2015/12/07/Kotlin 1.0 Beta 3 is Out!/</id>
     <published>2015-12-07T07:45:00.000Z</published>
     <updated>2017-06-19T04:50:23.000Z</updated>
     
@@ -813,7 +813,7 @@
     
     </summary>
     
-      <category term="官方动态" scheme="https://github.com/itgoyo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
+      <category term="官方动态" scheme="https://github.com/ihexo/categories/%E5%AE%98%E6%96%B9%E5%8A%A8%E6%80%81/"/>
     
     
   </entry>
