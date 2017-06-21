@@ -24,17 +24,17 @@
 <meta name="keywords" content="AllOpen,NoArg,Kapt">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Kotlin 1.0.6">
-<meta property="og:url" content="https://github.com/ihexo/2017/01/02/Kotlin 1.0.6/index.html">
+<meta property="og:url" content="https://kotlinandroid.net/2017/01/02/Kotlin 1.0.6/index.html">
 <meta property="og:site_name" content="KotlinAndroid">
 <meta property="og:description" content="我把所有文章和视频都放到了 Github 上 ，如果你喜欢，请给个 Star，谢谢~  在上周二，Kotlin 1.0.6 发布啦！这次更新主要是工具更新和bug修复。本文的内容主要来自官方博客。 IDE 插件的更新  try-finally 转换为 use()     通常我们在进行 IO 操作的时候，我们并不希望异常影响我们程序的执行，所以我们需要对异常进行捕获，但捕获的话我们也没有必要处理">
-<meta property="og:image" content="https://github.com/assets/2017.1.2/try.gif">
-<meta property="og:image" content="https://github.com/assets/2017.1.2/args.gif">
-<meta property="og:image" content="https://github.com/arts/kotlin扫码关注.png">
+<meta property="og:image" content="https://kotlinandroid.net/assets/2017.1.2/try.gif">
+<meta property="og:image" content="https://kotlinandroid.net/assets/2017.1.2/args.gif">
+<meta property="og:image" content="https://kotlinandroid.net/arts/kotlin扫码关注.png">
 <meta property="og:updated_time" content="2017-06-19T04:50:23.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kotlin 1.0.6">
 <meta name="twitter:description" content="我把所有文章和视频都放到了 Github 上 ，如果你喜欢，请给个 Star，谢谢~  在上周二，Kotlin 1.0.6 发布啦！这次更新主要是工具更新和bug修复。本文的内容主要来自官方博客。 IDE 插件的更新  try-finally 转换为 use()     通常我们在进行 IO 操作的时候，我们并不希望异常影响我们程序的执行，所以我们需要对异常进行捕获，但捕获的话我们也没有必要处理">
-<meta name="twitter:image" content="https://github.com/assets/2017.1.2/try.gif">
+<meta name="twitter:image" content="https://kotlinandroid.net/assets/2017.1.2/try.gif">
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
@@ -198,7 +198,7 @@
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
             <blockquote>
-<p>我把所有文章和视频都放到了 <a href="https://github.com/enbandari/Kotlin-Tutorials">Github</a> 上 ，如果你喜欢，请给个 Star，谢谢~</p>
+<p>我把所有文章和视频都放到了 <a href="https://github.com/enbandari/Kotlin-Tutorials" target="_blank" rel="external">Github</a> 上 ，如果你喜欢，请给个 Star，谢谢~</p>
 </blockquote>
 <p>在上周二，Kotlin 1.0.6 发布啦！这次更新主要是工具更新和bug修复。本文的内容主要来自<a href="https://blog.jetbrains.com/kotlin/" target="_blank" rel="external">官方博客</a>。</p>
 <h2 id="IDE-插件的更新"><a href="#IDE-插件的更新" class="headerlink" title="IDE 插件的更新"></a>IDE 插件的更新</h2><ul>
@@ -262,7 +262,7 @@
 <p>那么所有被 com.your.Annotation 这个注解标注的类成员都会默认 open。除此之外，它还可以作为元注解使用：</p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@com</span>.your.Annotation</div><div class="line">annotation <span class="class"><span class="keyword">class</span> <span class="title">MyFrameworkAnnotation</span></span></div><div class="line"></div><div class="line">@<span class="title">MyFrameworkAnnotation</span></div><div class="line"><span class="title">class</span> <span class="title">MyClass</span> // <span class="title">will</span> <span class="title">be</span> <span class="title">all</span>-<span class="title">open</span></div></pre></td></tr></table></figure>
 <p>Kotlin 还提供了 “kotlin-spring” 插件，其中包含了 spring 相关的所有注解，这样免得我们一个一个在 allopen 的配置中声明了。</p>
-<h2 id="No-arg-插件"><a href="#No-arg-插件" class="headerlink" title="No-arg 插件"></a>No-arg 插件</h2><p>如果大家看过我的视频，一定对我之前提到的“毁三观”的实例化有印象吧，附上<a href="https://github.com/enbandari/Kotlin-Tutorials">视频连接：12 Json数据引发的血案</a>，其中我们提到对于没有无参构造方法的 Kotlin 类，Gson 反序列化它们的时候，不知道如何实例化它们，只好用到了 <figure class="highlight plain"><figcaption><span>这个类。听说 Java 9 要移除这个略显黑科技的类，如果是这样，Gson 是不是会被削弱呢？Java 的心我们还是不操了，从 Kotlin 1.0.6 开始，这个问题将得到一个比较好的解决。</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">```groovy</div><div class="line">buildscript &#123;</div><div class="line">    dependencies &#123;</div><div class="line">        classpath &quot;org.jetbrains.kotlin:kotlin-noarg:$kotlin_version&quot;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">// Or &quot;kotlin-jpa&quot; for the Java Persistence API support</div><div class="line">apply plugin: &quot;kotlin-noarg&quot;</div><div class="line"></div><div class="line">noArg &#123;</div><div class="line">    annotation(&quot;com.your.Annotation&quot;)</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="No-arg-插件"><a href="#No-arg-插件" class="headerlink" title="No-arg 插件"></a>No-arg 插件</h2><p>如果大家看过我的视频，一定对我之前提到的“毁三观”的实例化有印象吧，附上<a href="https://github.com/enbandari/Kotlin-Tutorials" target="_blank" rel="external">视频连接：12 Json数据引发的血案</a>，其中我们提到对于没有无参构造方法的 Kotlin 类，Gson 反序列化它们的时候，不知道如何实例化它们，只好用到了 <figure class="highlight plain"><figcaption><span>这个类。听说 Java 9 要移除这个略显黑科技的类，如果是这样，Gson 是不是会被削弱呢？Java 的心我们还是不操了，从 Kotlin 1.0.6 开始，这个问题将得到一个比较好的解决。</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">```groovy</div><div class="line">buildscript &#123;</div><div class="line">    dependencies &#123;</div><div class="line">        classpath &quot;org.jetbrains.kotlin:kotlin-noarg:$kotlin_version&quot;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">// Or &quot;kotlin-jpa&quot; for the Java Persistence API support</div><div class="line">apply plugin: &quot;kotlin-noarg&quot;</div><div class="line"></div><div class="line">noArg &#123;</div><div class="line">    annotation(&quot;com.your.Annotation&quot;)</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>类似于 allopen 的使用方法，如果某个类需要无参默认构造方法，你只需要用上面声明好的注解 com.your.Annotation 标注即可。当然，这个生成的默认构造方法只能通过反射调用。</p>
 <h2 id="如何更新"><a href="#如何更新" class="headerlink" title="如何更新"></a>如何更新</h2><p>我一直觉得虽然我们出生就被选择了 Hard 模式，但我们没啥感觉啊。可是最近一直访问国外的网站，感觉真的好困难，宽带换成了电信 100M，下载 Kotlin 的插件仍然跟小水管一样，真也是没谁了。为了方便大家我把我下载的几个版本的插件放到<a href="https://pan.baidu.com/s/1pLbb2fp" target="_blank" rel="external">百度网盘</a>，供大家使用，请大家点击阅读原文获取下载地址。</p>
 <h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>目前 Kotlin 1.0.x 的版本更新更侧重于稳定性和易用性，因此语言上的特性基本不会更新，主要集中于 IDE 插件和编译器插件。如果大家期待语言特性的更新，那我们就去关注一下 1.1 吧！</p>
@@ -279,11 +279,11 @@
 
 
         
-        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/01/02/Kotlin 1.0.6/" target="_blank" rel="external">https://github.com/ihexo/2017/01/02/Kotlin 1.0.6/</a>
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/01/02/Kotlin 1.0.6/" target="_blank" rel="external">https://kotlinandroid.net/2017/01/02/Kotlin 1.0.6/</a>
         
     </div>
     <footer>
-        <a href="https://github.com/ihexo">
+        <a href="https://kotlinandroid.net">
             <img src="/img/kotlin_250x250.png" alt="itgoyo">
             itgoyo
         </a>
@@ -309,7 +309,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://github.com/ihexo/2017/01/02/Kotlin 1.0.6/&title=《Kotlin 1.0.6》 — KotlinAndroid&pic=https://github.com/ihexo/img/kotlin_250x250.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://kotlinandroid.net/2017/01/02/Kotlin 1.0.6/&title=《Kotlin 1.0.6》 — KotlinAndroid&pic=https://kotlinandroid.net/img/kotlin_250x250.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -319,22 +319,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://github.com/ihexo/2017/01/02/Kotlin 1.0.6/&title=《Kotlin 1.0.6》 — KotlinAndroid&source=talk is cheap,show me the girl." data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://kotlinandroid.net/2017/01/02/Kotlin 1.0.6/&title=《Kotlin 1.0.6》 — KotlinAndroid&source=talk is cheap,show me the girl." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/ihexo/2017/01/02/Kotlin 1.0.6/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://kotlinandroid.net/2017/01/02/Kotlin 1.0.6/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Kotlin 1.0.6》 — KotlinAndroid&url=https://github.com/ihexo/2017/01/02/Kotlin 1.0.6/&via=https://github.com/ihexo" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Kotlin 1.0.6》 — KotlinAndroid&url=https://kotlinandroid.net/2017/01/02/Kotlin 1.0.6/&via=https://kotlinandroid.net" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://github.com/ihexo/2017/01/02/Kotlin 1.0.6/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://kotlinandroid.net/2017/01/02/Kotlin 1.0.6/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -469,7 +469,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://github.com/ihexo/2017/01/02/Kotlin 1.0.6/&title=《Kotlin 1.0.6》 — KotlinAndroid&pic=https://github.com/ihexo/img/kotlin_250x250.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://kotlinandroid.net/2017/01/02/Kotlin 1.0.6/&title=《Kotlin 1.0.6》 — KotlinAndroid&pic=https://kotlinandroid.net/img/kotlin_250x250.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -479,22 +479,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://github.com/ihexo/2017/01/02/Kotlin 1.0.6/&title=《Kotlin 1.0.6》 — KotlinAndroid&source=talk is cheap,show me the girl." data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://kotlinandroid.net/2017/01/02/Kotlin 1.0.6/&title=《Kotlin 1.0.6》 — KotlinAndroid&source=talk is cheap,show me the girl." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/ihexo/2017/01/02/Kotlin 1.0.6/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://kotlinandroid.net/2017/01/02/Kotlin 1.0.6/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Kotlin 1.0.6》 — KotlinAndroid&url=https://github.com/ihexo/2017/01/02/Kotlin 1.0.6/&via=https://github.com/ihexo" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Kotlin 1.0.6》 — KotlinAndroid&url=https://kotlinandroid.net/2017/01/02/Kotlin 1.0.6/&via=https://kotlinandroid.net" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://github.com/ihexo/2017/01/02/Kotlin 1.0.6/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://kotlinandroid.net/2017/01/02/Kotlin 1.0.6/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -505,7 +505,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACJklEQVR42u3aS5KDMAwFwNz/0sx2NsCTTFKF3KyoDIndLDTW5/OJr+Pfdfb59ZX85vXzD1wYGBivZSTLX28r+ev1k/nnp1QMDIwNGGcR7Kn76kbzvWFgYGBc3/eOevnWMTAwMFYYeaqZJLTJuhgYGBgrQbAXUnvJ8wO5OAYGxgsZedD8/f1X+hsYGBivYhzFayVA91LfaFcYGBijGXmAS0hJia16NCwMf2BgYAxl5EsmIbL6TB6ab2AYGBibMa6/sJJqJu3MfG83ARcDA2Mco5o6VherDmSUGwAYGBijGd87LD4cUvNjIgYGxlBGrw2QLFwdwkj+DZQbmRgYGIMYeQCtJrQrAxbJS8HAwNiB0Tss9o53ecszYWNgYOzG6DUJeuMR+SGy+loxMDBmM5Il8xQ3QfZGypq1QwwMjNcyeiX+lU5iNYlNynAYGBi7MQpfDkJhNez2jpsYGBizGdWi/Eqiu9LIjJJnDAyM0Yxe0a3aYeiF0d7rw8DAmMfoDUDkZbhkc/l46+kOMTAwtmFUC2Hr4xR5Oa/ZHsDAwBjE6B0HV4ZfV9oMp7k4BgbGOMZRvJKEs9oKTYpxN+EYAwNjNGM92PUS12pDovqaMDAw5jHyLeY/3RxFbY1oYGBg7MPoBb71ktxKKxQDAwPjNwlqdZjjJiPHwMDACI6D1bCb/E70JAYGxgaMvJRWLbdVkb1mKgYGxmxGnjpWk9uVYYvkMIqBgbEB4w/Ml7JQuxKJlAAAAABJRU5ErkJggg==" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACLElEQVR42u3aQW7DMAxEUd//0s42QSBrhqMEkPi9MlJH1XMBlhR5XfJ1v13vn3zfj57//unofvStBRcMGDC2ZdyP1/MzI4byW/SVn5+BAQNGH4YeFpWgqXzLXW2yDgwYMGDEzzwHUyUBhQEDBoyk1NRTRiXJgwEDBoykiJWWiw/sfl6Lw4ABY0OGvon/3/+kvwEDBoytGLd5JYlg7RNpVzBgwDiakTQg3WRRTz3d/cCAAaMDww2XyVyWG47dVigMGDBOZbipXp4I5i3S4f8NGDBgHMqojUS4IdstifUQDwMGjA4MfQDCbS4qq+XFMAwYMM5m1I7+3eJ2kswFIxpXsl0YMGBsy0gSxKR8ddPNj3sYMGC0ZOjlZVL06ungBA8DBoyjGe5CNYa9CbmILb4PGDBgbMhYtZw+ZuHypJcLAwaMBoykfZgUq7VRsEl/AwYMGAcx9DZhUuK6KaaeOMKAAaMPIxl30I/y3SRSCdwwYMDowEiO4+2wKKwQjXfAgAGjAaM2tpW3ENxnhn8AGDBgNGMooxJJuKwlmnbAhQEDxqGMVY3MWqsyCd8wYMA4lXGbl74tfYXnz5UXBAMGjLMZtTBnxHL9WL80xmHDYMCAsS1DH63IS1n9EM1+3zBgwGjA0APfqiZlbbuTPBcGDBgwglQvP5KbUGHAgAHDrIPdwzv3AG5YxMKAAeNohpvS1UrW/KhuwXEbDBgwNmTUSke3Abm2MC42NWHAgLEf4wVYRPoIKn00pwAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 

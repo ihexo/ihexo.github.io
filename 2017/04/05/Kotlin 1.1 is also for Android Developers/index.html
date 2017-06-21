@@ -24,7 +24,7 @@
 <meta name="keywords" content="Coroutine,Android,typealias">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[译]Kotlin 1.1 也适用于 Android 开发者">
-<meta property="og:url" content="https://github.com/ihexo/2017/04/05/Kotlin 1.1 is also for Android Developers/index.html">
+<meta property="og:url" content="https://kotlinandroid.net/2017/04/05/Kotlin 1.1 is also for Android Developers/index.html">
 <meta property="og:site_name" content="KotlinAndroid">
 <meta property="og:description" content="Kotlin 1.1的发布令人们感到非常兴奋。此版本包含的新功能对 Java 开发者非常有用，并将 引领 JVM 走向一个充满发展潜力的新世界。 但有些新功能，如 coroutine 和 type alias（下文有几个例子）对于 Android 开发者来说就像科幻小说。 我们仍然停留在几乎没有什么改进的古老 Java 6 中，迫使我们以其他平台已经被被遗忘的方式进行开发。 所以一个理所当然的问题">
 <meta property="og:updated_time" content="2017-06-19T04:50:23.000Z">
@@ -194,13 +194,13 @@
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
             <p>Kotlin 1.1的发布令人们感到非常兴奋。此版本包含的新功能对 Java 开发者非常有用，并将 引领 JVM 走向一个充满发展潜力的新世界。</p>
-<p>但有些新功能，如 <a href="https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md">coroutine</a> 和 <a href="https://github.com/Kotlin/KEEP/blob/master/proposals/type-aliases.md">type alias</a>（下文有几个例子）对于 Android 开发者来说就像科幻小说。</p>
+<p>但有些新功能，如 <a href="https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md" target="_blank" rel="external">coroutine</a> 和 <a href="https://github.com/Kotlin/KEEP/blob/master/proposals/type-aliases.md" target="_blank" rel="external">type alias</a>（下文有几个例子）对于 Android 开发者来说就像科幻小说。</p>
 <p>我们仍然停留在几乎没有什么改进的古老 Java 6 中，迫使我们以其他平台已经被被遗忘的方式进行开发。</p>
 <p>所以一个理所当然的问题是：Kotlin 团队能够保持与 Java 6 的兼容性，同时保留所有这些新功能吗？答案是：当然！</p>
 <p><strong>所有新特性仍然兼容 Java 6 为 Android 开发者所用。</strong> 今天我想向您展示其中的一部分，看看它们是如何使你更容易的开发 Android 应用程式。</p>
 <a id="more"></a>
 <h1 id="type-alias-使你的-listener-更易读"><a href="#type-alias-使你的-listener-更易读" class="headerlink" title="type alias 使你的 listener 更易读"></a>type alias 使你的 listener 更易读</h1><p>当然 type alias 有很多不同的应用场景，不过我首先想到的是使用 lambda 作为 listener 的类型时会使代码更易读。</p>
-<p>如果没接触过 <a href="https://github.com/Kotlin/KEEP/issues/4">type alias</a> 的话，可以简单的理解为给复杂的类型名起个别名，使其更为可读。</p>
+<p>如果没接触过 <a href="https://github.com/Kotlin/KEEP/issues/4" target="_blank" rel="external">type alias</a> 的话，可以简单的理解为给复杂的类型名起个别名，使其更为可读。</p>
 <p>例如你有个接收 listener 的 <code>RecyclerViewAdapter</code>。<code>RecyclerView</code> 没有 <code>ListView</code> 那样 标准的方式来处理条目点击事件，必须由开发者自己实现。</p>
 <p>假如我们希望有一个可以访问 view 的 listener，那 adapter 可能如下所示：</p>
 <figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyAdapter</span></span>(<span class="keyword">val</span> items: List&lt;Item&gt;, <span class="keyword">val</span> listener: (View) -&gt; <span class="built_in">Unit</span>) : RecyclerView.Adapter&lt;MyAdapter.ViewHolder&gt;() &#123;</div><div class="line">    ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -242,14 +242,14 @@
 <p>幸运的是 Kotlin 社区的动作很快，已经有几个库引入了 coroutine 方便我们在 Android 上使用。</p>
 <p>首先来看看 Jetbrains 官方提供的：</p>
 <ul>
-<li><a href="https://github.com/Kotlin/kotlinx.coroutines/tree/master/ui/kotlinx-coroutines-android">kotlinx-coroutines-android</a> 提供了在 Android 上使用 coroutine 的实现。</li>
-<li><a href="https://github.com/Kotlin/anko">Anko</a> 在其最新的 beta 版中改写了部分框架引入 coroutine。</li>
+<li><a href="https://github.com/Kotlin/kotlinx.coroutines/tree/master/ui/kotlinx-coroutines-android" target="_blank" rel="external">kotlinx-coroutines-android</a> 提供了在 Android 上使用 coroutine 的实现。</li>
+<li><a href="https://github.com/Kotlin/anko" target="_blank" rel="external">Anko</a> 在其最新的 beta 版中改写了部分框架引入 coroutine。</li>
 </ul>
 <p>还有许多其他第三方库实现了自己的 coroutine 版本：</p>
 <ul>
-<li><a href="https://github.com/nhaarman/AsyncAwait-Android">AsyncAwait-Android by Niek Haarman</a></li>
-<li><a href="https://github.com/metalabdesign/AsyncAwait">Async / Await by Metalab</a></li>
-<li>如果你在寻找 Retrofit 的 coroutine 版本，那么可以试试 <a href="https://github.com/gildor/kotlin-coroutines-retrofit">kotlin-coroutines-retrofit by Andrey Mischenko</a></li>
+<li><a href="https://github.com/nhaarman/AsyncAwait-Android" target="_blank" rel="external">AsyncAwait-Android by Niek Haarman</a></li>
+<li><a href="https://github.com/metalabdesign/AsyncAwait" target="_blank" rel="external">Async / Await by Metalab</a></li>
+<li>如果你在寻找 Retrofit 的 coroutine 版本，那么可以试试 <a href="https://github.com/gildor/kotlin-coroutines-retrofit" target="_blank" rel="external">kotlin-coroutines-retrofit by Andrey Mischenko</a></li>
 </ul>
 <p>建议你们使用的时候看看它们是如何实现的，这就是开源的好处。</p>
 <h1 id="其它对-Android-开发者有用的东西"><a href="#其它对-Android-开发者有用的东西" class="headerlink" title="其它对 Android 开发者有用的东西"></a>其它对 Android 开发者有用的东西</h1><p>这个版本还有更多的改进，但是我更想强调一些侧重于 Android 开发的内容。</p>
@@ -271,11 +271,11 @@
 
 
         
-        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/04/05/Kotlin 1.1 is also for Android Developers/" target="_blank" rel="external">https://github.com/ihexo/2017/04/05/Kotlin 1.1 is also for Android Developers/</a>
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/04/05/Kotlin 1.1 is also for Android Developers/" target="_blank" rel="external">https://kotlinandroid.net/2017/04/05/Kotlin 1.1 is also for Android Developers/</a>
         
     </div>
     <footer>
-        <a href="https://github.com/ihexo">
+        <a href="https://kotlinandroid.net">
             <img src="/img/kotlin_250x250.png" alt="itgoyo">
             itgoyo
         </a>
@@ -297,7 +297,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://github.com/ihexo/2017/04/05/Kotlin 1.1 is also for Android Developers/&title=《[译]Kotlin 1.1 也适用于 Android 开发者》 — KotlinAndroid&pic=https://github.com/ihexo/img/kotlin_250x250.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://kotlinandroid.net/2017/04/05/Kotlin 1.1 is also for Android Developers/&title=《[译]Kotlin 1.1 也适用于 Android 开发者》 — KotlinAndroid&pic=https://kotlinandroid.net/img/kotlin_250x250.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -307,23 +307,23 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://github.com/ihexo/2017/04/05/Kotlin 1.1 is also for Android Developers/&title=《[译]Kotlin 1.1 也适用于 Android 开发者》 — KotlinAndroid&source=Kotlin 1.1的发布令人们感到非常兴奋。此版本包含的新功能对 Java 开发者非常有用，并将 引领 JVM 走向一个充满发展潜力的新世界。
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://kotlinandroid.net/2017/04/05/Kotlin 1.1 is also for Android Developers/&title=《[译]Kotlin 1.1 也适用于 Android 开发者》 — KotlinAndroid&source=Kotlin 1.1的发布令人们感到非常兴奋。此版本包含的新功能对 Java 开发者非常有用，并将 引领 JVM 走向一个充满发展潜力的新世界。
 但有些新..." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/ihexo/2017/04/05/Kotlin 1.1 is also for Android Developers/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://kotlinandroid.net/2017/04/05/Kotlin 1.1 is also for Android Developers/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《[译]Kotlin 1.1 也适用于 Android 开发者》 — KotlinAndroid&url=https://github.com/ihexo/2017/04/05/Kotlin 1.1 is also for Android Developers/&via=https://github.com/ihexo" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《[译]Kotlin 1.1 也适用于 Android 开发者》 — KotlinAndroid&url=https://kotlinandroid.net/2017/04/05/Kotlin 1.1 is also for Android Developers/&via=https://kotlinandroid.net" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://github.com/ihexo/2017/04/05/Kotlin 1.1 is also for Android Developers/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://kotlinandroid.net/2017/04/05/Kotlin 1.1 is also for Android Developers/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -434,7 +434,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://github.com/ihexo/2017/04/05/Kotlin 1.1 is also for Android Developers/&title=《[译]Kotlin 1.1 也适用于 Android 开发者》 — KotlinAndroid&pic=https://github.com/ihexo/img/kotlin_250x250.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://kotlinandroid.net/2017/04/05/Kotlin 1.1 is also for Android Developers/&title=《[译]Kotlin 1.1 也适用于 Android 开发者》 — KotlinAndroid&pic=https://kotlinandroid.net/img/kotlin_250x250.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -444,23 +444,23 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://github.com/ihexo/2017/04/05/Kotlin 1.1 is also for Android Developers/&title=《[译]Kotlin 1.1 也适用于 Android 开发者》 — KotlinAndroid&source=Kotlin 1.1的发布令人们感到非常兴奋。此版本包含的新功能对 Java 开发者非常有用，并将 引领 JVM 走向一个充满发展潜力的新世界。
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://kotlinandroid.net/2017/04/05/Kotlin 1.1 is also for Android Developers/&title=《[译]Kotlin 1.1 也适用于 Android 开发者》 — KotlinAndroid&source=Kotlin 1.1的发布令人们感到非常兴奋。此版本包含的新功能对 Java 开发者非常有用，并将 引领 JVM 走向一个充满发展潜力的新世界。
 但有些新..." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/ihexo/2017/04/05/Kotlin 1.1 is also for Android Developers/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://kotlinandroid.net/2017/04/05/Kotlin 1.1 is also for Android Developers/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《[译]Kotlin 1.1 也适用于 Android 开发者》 — KotlinAndroid&url=https://github.com/ihexo/2017/04/05/Kotlin 1.1 is also for Android Developers/&via=https://github.com/ihexo" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《[译]Kotlin 1.1 也适用于 Android 开发者》 — KotlinAndroid&url=https://kotlinandroid.net/2017/04/05/Kotlin 1.1 is also for Android Developers/&via=https://kotlinandroid.net" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://github.com/ihexo/2017/04/05/Kotlin 1.1 is also for Android Developers/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://kotlinandroid.net/2017/04/05/Kotlin 1.1 is also for Android Developers/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -471,7 +471,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACrUlEQVR42u3awW7rMAwEwP7/T+cBPb1L7F3RbHIYn4rWkTgqICqkfn7i5/X7vPv9/399XT7vPps/PxsPHh4e3lHo18O9C+4dMn/nehGv44mWAA8PD2+Ndz1ZO0H7ZotPYsbDw8P7Bl6yWScb/fU4+cEdDw8P7/t515v+dUBn438g7+Hh4eHFvPxYPClGJIWGdsbHai14eHh4C12k7/l5sb+Hh4eHN+iq52XZvBhxPe/Zp96OhoeHh7fAm4eVv3N27E7abzdpAw8PD2+ZNykBzIu5Z6Sbfw8eHh7eo7wEc4Zsg26veUU7Px4eHt4aLwfk1wXaNv9K8sDDw8Nb5iXliaRs0V4XaBNJsTR4eHh4C7z2osCkUJuHmJeV23fw8PDwnuIlG3SbPNomWb5YbQkDDw8Pb493VobIG2DzcNtjNx4eHt4eLw/ljJdv9M+22fDw8PA2eGdb+VON/3YR6woDHh4e3gKvHa5tUCUppE1IbZLAw8PDe5aXb99nTf288HFW2riJGQ8PD2+N1xZw2+Uo7iyUBY6b9/Hw8PCWeZMjbJ5Oknnzw/pNWQQPDw/vQ7w8oDzBtOkhv+iAh4eHt83Lw20LEMnGPWlxtSUSPDw8vKd4+SZeXHU62r7bI3g0Dh4eHt4f8vIgXuWTXxdIDtw3uQ4PDw9vjZdv/WfF1snmPhoZDw8Pb4GXb+5tK6tdsrPFimLGw8PDe5R3tq23gU6aWPlcNykBDw8Pb4F3lh6SttZ85MNyMB4eHt4Cb1I2zSdOpm8LE3h4eHif5Z21weZXAZKj/Nki4uHh4f0Nb3Jczj+bL1ybx/Dw8PC+k9eGPpklKUxEs+Dh4eF9Aa+9/DQ5as+LvHh4eHh7vOTgm18CaIsL+QLlVxbw8PDw9nijr/rx+2cH8WcLFnh4eHhj3j9QRoi9EUAcawAAAABJRU5ErkJggg==" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACu0lEQVR42u3aQW4bQQwEQP//0wmQkwNko25yRtahdDJkebC1ApZ0k19f8evXn9f3n7+/8/SZp98m7ydnHnvh4eHhjS796ZVc7tNfnfpkcs7TmXh4eHj3eKeKQXJr2kIyOxMPDw/vE3inykn+WN/cMjw8PLxP4OVxQPL5s4UEDw8P7/285BGfxwrtzWqDhitZCx4eHl7Mmw3Afvbn6/M9PDw8vNFUvS0S/29t2wBidoV/nYmHh4d3gTdbkEoa4ntP7HYkhoeHh3eDN4tZk4LRvr8pSDUVDw8Pb8QrxkijR/NshNa23Y83HQ8PD+8CL2+v8zF/W0I2bXpenPDw8PBO8fL2d3Ppp0pFUrqK7woPDw9vwWv/+U8uer+O0Mayj6MvPDw8vKO8NlY4tUywWVBoB2N4eHh47+Hlzes+ls0HYO2gDg8PD+8eb3N0foOSkGIT+7646Xh4eHiHeO2QPh/Yt61wu6YQhSB4eHh413htc1w0sqMFgiTkLZJdPDw8vKO8JIRtG+J9k72PbouUGg8PD6/knRreJ0tRbQlp160eR194eHh4F3jtkD5pcGdjs1ng+/g+Hh4e3gXebAlgc4mz1nwTIuPh4eGd5bWDpbZ4tCHCPjh+kbLg4eHhXeAl4FmL3AYTs1vwojDg4eHhHeXl3fesFZ6FGu04Leru8fDw8Na8hNEOomZ7UPmNiBprPDw8vAu8pDy0YUEbImyikOjLwMPDwzvKawdR7YW2C1t5k11/b3h4eHgXeHl5mD3085Nnq2B4eHh47+FtHt/7KDZf4TpVQvDw8PBO8WZjsHaxYBNP5FHvP87Ew8PDu8abFYP8r/LPbCKJFwsEeHh4eG/nne1UT4278PDw8D6flyw85QFufnIbEOPh4eHd5m2GT7PykLTpsyUwPDw8vNu81WLTopy0vBUADw8P7wzvN6hMkpd0gEsWAAAAAElFTkSuQmCC" alt="微信分享二维码">
 </div>
 
 
