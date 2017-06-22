@@ -8,9 +8,32 @@
     
 
 
+<!-- Baidu Push -->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- End Baidu Push -->
+
 
     <meta charset="utf-8">
     
+    <meta name="google-site-verification" content="true">
+    <meta name="baidu-site-verification" content="97dbRVWfVh" />
+    <meta name="sogou_site_verification" content="AIePRXkUI4"/>
+    
+    
+    <link rel="canonical" href="http://www.kotlinandroid.net/categories/">
     
     
     <title>categories | KotlinAndroid | 一个专注发布KotlinAndroid相关资源与优秀文章的技术网站</title>
@@ -31,10 +54,10 @@
 <meta name="twitter:title" content="categories">
 <meta name="twitter:description" content="talk is cheap,show me the girl.">
     
-        <link rel="alternate" type="application/atom+xml" title="KotlinAndroid" href="/atom.xml">
+        <link rel="alternative" href="/atom.xml" title="KotlinAndroid" type="application/atom+xml">
     
     <link rel="shortcut icon" href="/img/kotlin.png">
-    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <link rel="stylesheet" href="/css/style.css?v=1.5.2">
     <script>window.lazyScripts=[]</script>
 </head>
 
@@ -49,96 +72,89 @@
     <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
       <div class="brand">
         <a href="/" class="avatar waves-effect waves-circle waves-light">
-          <img src="/img/kotlin.png">
+          <img src="/img/kotlin_250x250.png">
         </a>
         <hgroup class="introduce">
-          <h5 class="nickname">itgoyo</h5>
-          <a href="mailto:itgoyo@gmail.com" title="itgoyo@gmail.com" class="mail">itgoyo@gmail.com</a>
+          <h5 class="nickname">KotlinAndroid</h5>
+          <a href="mailto:itgoyo@kotlinandroid.net" title="itgoyo@kotlinandroid.net" class="mail">itgoyo@kotlinandroid.net</a>
         </hgroup>
       </div>
     </div>
-
     <div class="scroll-wrap flex-col">
       <ul class="nav">
         
             <li class="waves-block waves-effect">
-              <a href="/website"  >
+              <a href="https://www.kotlinandroid.net"  >
                 <i class="icon icon-lg icon-html5"></i>
                 官网
-
               </a>
             </li>
-
         
             <li class="waves-block waves-effect">
               <a href="/"  >
                 <i class="icon icon-lg icon-home"></i>
                 主页
-
               </a>
             </li>
-
         
             <li class="waves-block waves-effect">
               <a href="/archives"  >
                 <i class="icon icon-lg icon-archives"></i>
-                所有文章
-
+                文章
               </a>
             </li>
-
         
             <li class="waves-block waves-effect">
               <a href="/tags"  >
                 <i class="icon icon-lg icon-tags"></i>
                 标签
-
               </a>
             </li>
-
         
             <li class="waves-block waves-effect active">
               <a href="/categories"  >
                 <i class="icon icon-lg icon-th-list"></i>
                 分类
-
               </a>
             </li>
-
         
             <li class="waves-block waves-effect">
-              <a href="https://github.com/itgoyo" target="_blank" >
+              <a href="Mailto:itgoyo@kotlinandroid.net"  >
+                <i class="icon icon-lg icon-envelope"></i>
+                邮件
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/itgoyo"  >
                 <i class="icon icon-lg icon-github"></i>
                 Github
-
               </a>
             </li>
-
-        
-            <li class="waves-block waves-effect">
-              <a href="http://www.weibo.com/kotlinandroid" target="_blank" >
-                <i class="icon icon-lg icon-weibo"></i>
-                Weibo
-
-              </a>
-            </li>
-
         
             <li class="waves-block waves-effect">
               <a href="/resume"  >
-                <i class="icon icon-lg icon-link"></i>
+                <i class="icon icon-lg icon-file-text"></i>
                 Résumé
-
               </a>
             </li>
-
         
-        <!-- music-->
-      </ul>
+            <li class="waves-block waves-effect">
+              <a href="https://www.kotlinandroid.net"  >
+                <i class="icon icon-lg icon-chrome"></i>
+                科学上网
+              </a>
+            </li>
+        
 
+        <div class="div_right_bottom" align="center">
+          <img src="http://open.weixin.qq.com/qr/code/?username=kotlinandroid">
+          微信公众号
+          </div>
+
+      </ul>
     </div>
   </div>
-
 </aside>
 
     <main id="main">
@@ -175,16 +191,16 @@
         </h5>
     </div>
 
-    
+     
 <div class="tabs-bar container">
     <nav class="tags-list">
         <a href="/categories" style="-webkit-order:-1;order:-1" class="tags-list-item waves-effect waves-button waves-light
-             active">All</a>
-        
+             active">全部</a>
+         
 
             <a href="/categories/官方动态/" style="-webkit-order:0;order:0" class="tags-list-item waves-effect waves-button waves-light">官方动态</a>
 
-        
+         
 
             <a href="/categories/心路历程/" style="-webkit-order:1;order:1" class="tags-list-item waves-effect waves-button waves-light">心路历程</a>
 
@@ -195,7 +211,6 @@
         <a href="javascript:;" onclick="BLOG.tabBar(this)" class="action tags-list-item waves-effect waves-circle waves-light"><i class="icon icon-ellipsis-h"></i></a>
     </div>
 </div>
-
 
 
 </header>
@@ -211,7 +226,7 @@
                 <div class="waterfall-item">
   <article class="article-card archive-article">
     <div class="post-meta">
-      <time class="post-time" title="2015-12-07 15:45:00" datetime="2015-12-07T07:45:00.000Z"  itemprop="datePublished">2015-12-07</time>
+      <time class="post-time" title="2015年12月07日 15:45" datetime="2015-12-07T07:45:00.000Z"  itemprop="datePublished">Dec 7, 2015</time>
 
       
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
@@ -238,34 +253,7 @@
                 <div class="waterfall-item">
   <article class="article-card archive-article">
     <div class="post-meta">
-      <time class="post-time" title="2017-03-15 22:21:00" datetime="2017-03-15T14:21:00.000Z"  itemprop="datePublished">2017-03-15</time>
-
-      
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
-
-
-
-    </div>
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/03/15/Kotlin 1.0.7 is out/">[译]Kotlin 1.0.7 is out</a>
-    </h3>
-  
-
-
-
-    
-  </article>
-</div>
-            
-
-                <div class="waterfall-item">
-  <article class="article-card archive-article">
-    <div class="post-meta">
-      <time class="post-time" title="2017-01-02 16:22:57" datetime="2017-01-02T08:22:57.000Z"  itemprop="datePublished">2017-01-02</time>
+      <time class="post-time" title="2017年01月02日 16:22" datetime="2017-01-02T08:22:57.000Z"  itemprop="datePublished">Jan 2, 2017</time>
 
       
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
@@ -298,7 +286,34 @@
                 <div class="waterfall-item">
   <article class="article-card archive-article">
     <div class="post-meta">
-      <time class="post-time" title="2017-02-06 08:14:15" datetime="2017-02-06T00:14:15.000Z"  itemprop="datePublished">2017-02-06</time>
+      <time class="post-time" title="2017年03月15日 22:21" datetime="2017-03-15T14:21:00.000Z"  itemprop="datePublished">Mar 15, 2017</time>
+
+      
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
+
+
+
+    </div>
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/03/15/Kotlin 1.0.7 is out/">[译]Kotlin 1.0.7 is out</a>
+    </h3>
+  
+
+
+
+    
+  </article>
+</div>
+            
+
+                <div class="waterfall-item">
+  <article class="article-card archive-article">
+    <div class="post-meta">
+      <time class="post-time" title="2017年02月06日 8:14" datetime="2017-02-06T00:14:15.000Z"  itemprop="datePublished">Feb 6, 2017</time>
 
       
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
@@ -331,7 +346,7 @@
                 <div class="waterfall-item">
   <article class="article-card archive-article">
     <div class="post-meta">
-      <time class="post-time" title="2017-04-06 23:21:00" datetime="2017-04-06T15:21:00.000Z"  itemprop="datePublished">2017-04-06</time>
+      <time class="post-time" title="2017年04月06日 23:21" datetime="2017-04-06T15:21:00.000Z"  itemprop="datePublished">Apr 6, 2017</time>
 
       
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
@@ -358,7 +373,7 @@
                 <div class="waterfall-item">
   <article class="article-card archive-article">
     <div class="post-meta">
-      <time class="post-time" title="2017-03-21 21:51:00" datetime="2017-03-21T13:51:00.000Z"  itemprop="datePublished">2017-03-21</time>
+      <time class="post-time" title="2017年03月21日 21:51" datetime="2017-03-21T13:51:00.000Z"  itemprop="datePublished">Mar 21, 2017</time>
 
       
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
@@ -385,7 +400,7 @@
                 <div class="waterfall-item">
   <article class="article-card archive-article">
     <div class="post-meta">
-      <time class="post-time" title="2017-03-06 17:43:00" datetime="2017-03-06T09:43:00.000Z"  itemprop="datePublished">2017-03-06</time>
+      <time class="post-time" title="2017年03月06日 17:43" datetime="2017-03-06T09:43:00.000Z"  itemprop="datePublished">Mar 6, 2017</time>
 
       
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
@@ -412,7 +427,7 @@
                 <div class="waterfall-item">
   <article class="article-card archive-article">
     <div class="post-meta">
-      <time class="post-time" title="2017-02-17 13:37:00" datetime="2017-02-17T05:37:00.000Z"  itemprop="datePublished">2017-02-17</time>
+      <time class="post-time" title="2017年02月17日 13:37" datetime="2017-02-17T05:37:00.000Z"  itemprop="datePublished">Feb 17, 2017</time>
 
       
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
@@ -439,7 +454,7 @@
                 <div class="waterfall-item">
   <article class="article-card archive-article">
     <div class="post-meta">
-      <time class="post-time" title="2017-03-01 17:12:00" datetime="2017-03-01T09:12:00.000Z"  itemprop="datePublished">2017-03-01</time>
+      <time class="post-time" title="2017年03月01日 17:12" datetime="2017-03-01T09:12:00.000Z"  itemprop="datePublished">Mar 1, 2017</time>
 
       
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
@@ -466,7 +481,34 @@
                 <div class="waterfall-item">
   <article class="article-card archive-article">
     <div class="post-meta">
-      <time class="post-time" title="2017-04-05 16:13:00" datetime="2017-04-05T08:13:00.000Z"  itemprop="datePublished">2017-04-05</time>
+      <time class="post-time" title="2017年03月14日 20:29" datetime="2017-03-14T12:29:00.000Z"  itemprop="datePublished">Mar 14, 2017</time>
+
+      
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
+
+
+
+    </div>
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/03/14/Kotlin 1.1.1 is out/">[译]Kotlin 1.1.1 is out</a>
+    </h3>
+  
+
+
+
+    
+  </article>
+</div>
+            
+
+                <div class="waterfall-item">
+  <article class="article-card archive-article">
+    <div class="post-meta">
+      <time class="post-time" title="2017年04月05日 16:13" datetime="2017-04-05T08:13:00.000Z"  itemprop="datePublished">Apr 5, 2017</time>
 
       
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
@@ -499,34 +541,7 @@
                 <div class="waterfall-item">
   <article class="article-card archive-article">
     <div class="post-meta">
-      <time class="post-time" title="2017-03-14 20:29:00" datetime="2017-03-14T12:29:00.000Z"  itemprop="datePublished">2017-03-14</time>
-
-      
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
-
-
-
-    </div>
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/03/14/Kotlin 1.1.1 is out/">[译]Kotlin 1.1.1 is out</a>
-    </h3>
-  
-
-
-
-    
-  </article>
-</div>
-            
-
-                <div class="waterfall-item">
-  <article class="article-card archive-article">
-    <div class="post-meta">
-      <time class="post-time" title="2017-04-25 21:19:00" datetime="2017-04-25T13:19:00.000Z"  itemprop="datePublished">2017-04-25</time>
+      <time class="post-time" title="2017年04月25日 21:19" datetime="2017-04-25T13:19:00.000Z"  itemprop="datePublished">Apr 25, 2017</time>
 
       
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
@@ -553,7 +568,7 @@
                 <div class="waterfall-item">
   <article class="article-card archive-article">
     <div class="post-meta">
-      <time class="post-time" title="2017-03-04 08:46:34" datetime="2017-03-04T00:46:34.000Z"  itemprop="datePublished">2017-03-04</time>
+      <time class="post-time" title="2017年03月04日 8:46" datetime="2017-03-04T00:46:34.000Z"  itemprop="datePublished">Mar 4, 2017</time>
 
       
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
@@ -594,7 +609,7 @@
                 <div class="waterfall-item">
   <article class="article-card archive-article">
     <div class="post-meta">
-      <time class="post-time" title="2017-02-20 10:32:32" datetime="2017-02-20T02:32:32.000Z"  itemprop="datePublished">2017-02-20</time>
+      <time class="post-time" title="2017年02月20日 10:32" datetime="2017-02-20T02:32:32.000Z"  itemprop="datePublished">Feb 20, 2017</time>
 
       
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/心路历程/">心路历程</a></li></ul>
@@ -643,16 +658,17 @@
 
 
         <p>
-            
-                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
-            
-            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+            <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            <span>博客内容遵循 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0协议</a></span>
         </p>
     </div>
     <div class="bottom">
+    
+        <p>
+            <span>KotlinAndroid &copy; 2017</span>  &nbsp&nbsp&nbsp 作者Github地址 欢迎关注 <a href="https://github.com/itgoyo" target="_blank">itgoyo</a>
+        </p>
         <p>
             <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
-            <span>itgoyo &copy; 2015 - 2017</span>  &nbsp&nbsp&nbsp 作者Github地址 欢迎关注 <a href="https://github.com/itgoyo" target="_blank">itgoyo</a>
         </p>
     </div>
 </footer>
@@ -666,7 +682,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://kotlinandroid.net/categories/&title=《categories》 — KotlinAndroid&pic=https://kotlinandroid.net/img/kotlin.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://kotlinandroid.net/categories/&title=《categories》 — KotlinAndroid&pic=https://kotlinandroid.net/img/kotlin_250x250.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -714,9 +730,11 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 
 
 
+lazyScripts.push('//s95.cnzz.com/z_stat.php?id=1261686164&web_id=1261686164')
+
 </script>
 
-<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+<script src="/js/main.min.js?v=1.5.2"></script>
 
 
 <div class="search-panel" id="search-panel">
@@ -736,8 +754,7 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 </li>
 </template>
 
-<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
-
+<script src="/js/search.min.js?v=1.5.2" async></script>
 
 
 
@@ -746,23 +763,6 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
-
-<script>
-(function() {
-    var OriginTitile = document.title, titleTime;
-    document.addEventListener('visibilitychange', function() {
-        if (document.hidden) {
-            document.title = '点我有惊喜...';
-            clearTimeout(titleTime);
-        } else {
-            document.title = '｡◕‿◕｡';
-            titleTime = setTimeout(function() {
-                document.title = OriginTitile;
-            },2000);
-        }
-    });
-})();
-</script>
 
 
 
