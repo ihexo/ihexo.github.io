@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+<!-- Baidu Push -->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- End Baidu Push -->
+
+
+    <meta charset="utf-8">
+    
+    <meta name="google-site-verification" content="true">
+    <meta name="baidu-site-verification" content="97dbRVWfVh" />
+    <meta name="sogou_site_verification" content="AIePRXkUI4"/>
+    
+    
+    <link rel="canonical" href="http://www.kotlinandroid.net/2017/03/15/Kotlin 1.0.7 is out/">
+    
+    
+    <title>[译]Kotlin 1.0.7 is out | KotlinAndroid | 一个专注发布KotlinAndroid相关资源与优秀文章的技术网站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Kotlin">
+    <meta name="description" content="我们很高兴地宣布Kotlin 1.0.x系列的最后一个更新，Kotlin 1.0.7已经发布了。需要重点关注的是该补丁针对Gradle和annotation processing进行修复，此前无法升级到1.1版本的用户现在可以正常使用了。完整的修复列表可以在更新日志查看。要在Maven或Gradle版本中更新版本，只需在构建脚本中更改Kotlin版本号。命令行编译器会在Github发行页面中下载。">
+<meta name="keywords" content="Kotlin">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[译]Kotlin 1.0.7 is out">
+<meta property="og:url" content="https://kotlinandroid.net/2017/03/15/Kotlin 1.0.7 is out/index.html">
+<meta property="og:site_name" content="KotlinAndroid">
+<meta property="og:description" content="我们很高兴地宣布Kotlin 1.0.x系列的最后一个更新，Kotlin 1.0.7已经发布了。需要重点关注的是该补丁针对Gradle和annotation processing进行修复，此前无法升级到1.1版本的用户现在可以正常使用了。完整的修复列表可以在更新日志查看。要在Maven或Gradle版本中更新版本，只需在构建脚本中更改Kotlin版本号。命令行编译器会在Github发行页面中下载。">
+<meta property="og:updated_time" content="2017-06-23T16:08:12.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[译]Kotlin 1.0.7 is out">
+<meta name="twitter:description" content="我们很高兴地宣布Kotlin 1.0.x系列的最后一个更新，Kotlin 1.0.7已经发布了。需要重点关注的是该补丁针对Gradle和annotation processing进行修复，此前无法升级到1.1版本的用户现在可以正常使用了。完整的修复列表可以在更新日志查看。要在Maven或Gradle版本中更新版本，只需在构建脚本中更改Kotlin版本号。命令行编译器会在Github发行页面中下载。">
+    
+        <link rel="alternative" href="/atom.xml" title="KotlinAndroid" type="application/atom+xml">
+    
+    <link rel="shortcut icon" href="/img/kotlin.png">
+    <link rel="stylesheet" href="/css/style.css?v=1.5.2">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" style="
+    width: 300px;"class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand" style="
+          width: 300px;">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/kotlin_250x250.png">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">KotlinAndroid</h5>
+          <a href="mailto:kotlinandroid@kotlinandroid.net" title="kotlinandroid@kotlinandroid.net" class="mail">kotlinandroid@kotlinandroid.net</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col" style="
+        width: 300px;">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/website"  >
+                <i class="icon icon-lg icon-html5"></i>
+                官网
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                文章
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="Mailto:itgoyo@kotlinandroid.net"  >
+                <i class="icon icon-lg icon-envelope"></i>
+                邮件
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/itgoyo"  >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/resume"  >
+                <i class="icon icon-lg icon-file-text"></i>
+                Résumé
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://www.kotlinandroid.net"  >
+                <i class="icon icon-lg icon-chrome"></i>
+                科学上网
+              </a>
+            </li>
+        
+
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=300 height=54 src="//music.163.com/outchain/player?type=0&id=120897804&auto=1&height=32"></iframe>
+
+        <div class="div_right_bottom" align="center">
+          <img src="http://open.weixin.qq.com/qr/code/?username=kotlinandroid">
+          微信公众号
+          </div>
+
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">[译]Kotlin 1.0.7 is out</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">[译]Kotlin 1.0.7 is out</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-03-15T14:21:00.000Z" itemprop="datePublished" class="page-time">
+  2017-03-15
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+</header>
+
+
+<div class="container body-wrap">
+    
+
+<article id="post-Kotlin 1.0.7 is out"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">[译]Kotlin 1.0.7 is out</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017年03月15日 22:21" datetime="2017-03-15T14:21:00.000Z"  itemprop="datePublished">2017-03-15</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>我们很高兴地宣布Kotlin 1.0.x系列的最后一个更新，Kotlin 1.0.7已经发布了。需要重点关注的是该补丁针对Gradle和annotation processing进行修复，此前无法升级到1.1版本的用户现在可以正常使用了。完整的修复列表可以在<a href="https://github.com/JetBrains/kotlin/blob/1.0.7/ChangeLog.md" target="_blank" rel="external">更新日志</a>查看。<br>要在Maven或Gradle版本中更新版本，只需在构建脚本中更改Kotlin版本号。命令行编译器会在<a href="https://github.com/JetBrains/kotlin/releases/tag/v1.0.7" target="_blank" rel="external">Github发行页面</a>中下载。<br>在IntelliJ IDEA和Android Studio中，如果您使用Kotlin 1.0.7构建项目，我们建议使用1.1版本的插件，并将语言版本切换为1.0。如果您确实想要安装1.0.7版本的插件，可以在<a href="https://plugins.jetbrains.com/plugin/6954-kotlin" target="_blank" rel="external">Kotlin插件页面</a>下载相应版本，并通过IDE的“从磁盘安装插件…”按钮进行安装。<br>一如既往，如果您在新版本中遇到任何问题，欢迎您在<a href="https://discuss.kotlinlang.org/" target="_blank" rel="external">讨论组</a>或者Slack（在<a href="http://kotlinslackin.herokuapp.com/" target="_blank" rel="external">这里</a>获得邀请）里寻求帮助，或在<a href="https://youtrack.jetbrains.com/issues/KT" target="_blank" rel="external">这里</a>提交issue。<br>让我们来享受Kotlin吧！</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-06-23T16:08:12.000Z" itemprop="dateUpdated">2017年6月24日 0:08</time>
+</span><br>
+
+
+        
+        转载请注明出处：<a href="https://blog.jetbrains.com/kotlin/2017/03/kotlin-1-0-7-is-out/ " target="_blank" rel="external">https://blog.jetbrains.com/kotlin/2017/03/kotlin-1-0-7-is-out/</a>
+        
+    </div>
+    <footer>
+        <div>
+          
+        </div>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Kotlin/">Kotlin</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://kotlinandroid.net/2017/03/15/Kotlin 1.0.7 is out/&title=《[译]Kotlin 1.0.7 is out》 — KotlinAndroid&pic=https://kotlinandroid.net/img/kotlin_250x250.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://kotlinandroid.net/2017/03/15/Kotlin 1.0.7 is out/&title=《[译]Kotlin 1.0.7 is out》 — KotlinAndroid&source=talk is cheap,show me the girl." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://kotlinandroid.net/2017/03/15/Kotlin 1.0.7 is out/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《[译]Kotlin 1.0.7 is out》 — KotlinAndroid&url=https://kotlinandroid.net/2017/03/15/Kotlin 1.0.7 is out/&via=https://kotlinandroid.net" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://kotlinandroid.net/2017/03/15/Kotlin 1.0.7 is out/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/03/21/Kotlin 1.1 Event in Your City/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">[译]Kotlin 1.1 Event in Your City</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/03/14/Kotlin 1.1.1 is out/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">[译]Kotlin 1.1.1 is out</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+<section class="comments" id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_shortname = 'itgoyo';
+    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+
+
+
+
+<div class="comments" id="comments">
+<div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+</div>
+<script>
+    var cloudTieConfig = {
+        url: document.location.href,
+        sourceId: "",
+        productKey: "0263eabe3b1b46709556eda1c39750be",
+        target: "cloud-tie-wrapper"
+    };
+</script>
+<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            <span>博客内容遵循 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+    
+        <p>
+            <span>KotlinAndroid &copy; 2017</span>  &nbsp&nbsp&nbsp 作者Github地址 欢迎关注 <a href="https://github.com/itgoyo" target="_blank">itgoyo</a>
+        </p>
+        <p>
+            <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://kotlinandroid.net/2017/03/15/Kotlin 1.0.7 is out/&title=《[译]Kotlin 1.0.7 is out》 — KotlinAndroid&pic=https://kotlinandroid.net/img/kotlin_250x250.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://kotlinandroid.net/2017/03/15/Kotlin 1.0.7 is out/&title=《[译]Kotlin 1.0.7 is out》 — KotlinAndroid&source=talk is cheap,show me the girl." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://kotlinandroid.net/2017/03/15/Kotlin 1.0.7 is out/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《[译]Kotlin 1.0.7 is out》 — KotlinAndroid&url=https://kotlinandroid.net/2017/03/15/Kotlin 1.0.7 is out/&via=https://kotlinandroid.net" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://kotlinandroid.net/2017/03/15/Kotlin 1.0.7 is out/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKklEQVR42u3awYrDMAxF0f7/T2e2hZD0PskZiHyzKlM39vGAsCx9Pvg5vp77Mefx51+dR/JZWo8MGTJeyzhun6sJyF/IQvm891sjQ4aMHRgkgPLF3S+az0XGy5AhQ0Y6hhz70rAuQ4YMGbUgiI5rON/sbJ8MGTL2YZBQSPBp0rtsy2TIkDGawUPk/39+pL4hQ4aMVzGO8Fm1rFqp4HJVMmTIGM3gAY4fy0iRgG9NMIsMGTJGMzrNE2lD2BMzypAhYzaDh7na1Vvtui0tTsiQIWMHRr/BlAdf8n5efoirEDJkyHgto5OI/kgpwfEuaKe4WoMMGTJGM2oX8WnA7dRXyYwyZMjYh5EGx7RhiwTxdG0/6hsyZMgYx+gnn2lKzI+D5PJOhgwZUxn8pf0aaT/pDf4PMmTIGMfgCSRPR9OWi9aMMmTI2IBRO9Lxz6RI2Wk+kyFDxp6M9AC36houDdMyZMjYh8HLjTzsrgrE5LcyZMiYzeDtDmn6WitekvBdbN2QIUPGyxlkKA+XnfaydNcvqxwyZMgYyuBLJBf6NXYa7mXIkLEnI71EqxUA4hSUXALKkCFjKKNzjOOBtVa8DI6JMmTIGM3ohLk01UyLmulhVIYMGbMZnSCbFi/5t8UipQwZMkYz0sCXXvF3msDIamXIkCGDjOHnUD7jgwFXhgwZoxlpuKyNjFvNZMiQsQGj3xKx6jIu3UoZMmTswGiljiAc146b5J0yZMjYgPEH42HRP1iiltUAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+
+lazyScripts.push('//s95.cnzz.com/z_stat.php?id=1261686164&web_id=1261686164')
+
+</script>
+
+<script src="/js/main.min.js?v=1.5.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.5.2" async></script>
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>
