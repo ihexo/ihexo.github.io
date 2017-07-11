@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kotlinandroid.net/"/>
-  <updated>2017-06-23T12:29:29.000Z</updated>
+  <updated>2017-07-06T16:10:27.000Z</updated>
   <id>https://kotlinandroid.net/</id>
   
   <author>
@@ -14,6 +14,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>String、StringBuffer、StringBuilder的区别.md</title>
+    <link href="https://kotlinandroid.net/2017/07/06/String%E3%80%81StringBuffer%E3%80%81StringBuilder%E7%9A%84%E5%8C%BA%E5%88%AB-md/"/>
+    <id>https://kotlinandroid.net/2017/07/06/String、StringBuffer、StringBuilder的区别-md/</id>
+    <published>2017-07-06T15:45:01.000Z</published>
+    <updated>2017-07-06T16:10:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一、区别"><a href="#一、区别" class="headerlink" title="一、区别"></a>一、区别</h3><p>String ：字符串常量<br>StringBuffer ：字符串变量<br>StringBuilder ：字符串变量</p>
+<h3 id="二、速度"><a href="#二、速度" class="headerlink" title="二、速度"></a>二、速度</h3><p>StringBuilder &gt; StringBuffer &gt; String</p>
+<p>分析原因：</p>
+<p> String类是不可变类，任何对String的改变都 会引发新的String对象的生成；</p>
+<p> String类型进行改变的时候其实都等同于生成了一个新的 String 对象，然后将指针指向新的 String 对象，所以经常改变内容的字符串最好不要用 String。</p>
+<p>而StringBuffer与StringBuilder就不一样了，他们是字符串变量，是可改变的对象，每当我们用它们对字符串做操作时，实际上是在一个对象上操作的，这样就不会像String一样创建一些而外的对象进行操作了，当然速度就快了。</p>
+<p>又因为StringBuilder是线程不安全的，StringBuffer是线程安全的，所以StringBuilder比StringBuffer要快。</p>
+<hr>
+<p>如果你有兴趣加入我们，请直接关注公众号 Kotlinandroid ，或者加 QQ 群：465280882</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/arts/kotlin_group.jpg" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;一、区别&quot;&gt;&lt;a href=&quot;#一、区别&quot; class=&quot;headerlink&quot; title=&quot;一、区别&quot;&gt;&lt;/a&gt;一、区别&lt;/h3&gt;&lt;p&gt;String ：字符串常量&lt;br&gt;StringBuffer ：字符串变量&lt;br&gt;StringBuilder ：字符串变量&lt;/
+    
+    </summary>
+    
+      <category term="学习资料" scheme="https://kotlinandroid.net/categories/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Kotlin</title>

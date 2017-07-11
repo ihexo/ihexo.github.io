@@ -33,27 +33,28 @@
     <meta name="sogou_site_verification" content="AIePRXkUI4"/>
     
     
-    <link rel="canonical" href="http://www.kotlinandroid.net/2017/03/14/Kotlin 1.1.1 is out/">
+    <link rel="canonical" href="http://www.kotlinandroid.net/2017/07/06/String、StringBuffer、StringBuilder的区别-md/">
     
     
-    <title>[译]Kotlin 1.1.1 is out | KotlinAndroid | 一个专注发布KotlinAndroid相关资源与优秀文章的技术网站</title>
+    <title>String、StringBuffer、StringBuilder的区别.md | KotlinAndroid | 一个专注发布KotlinAndroid相关资源与优秀文章的技术网站</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="Kotlin">
-    <meta name="description" content="今天我们发布了针对 Kotlin 1.1 的第一个bug修复更新。此更新的重点是解决导致错误代码生成的回归；我们希望尽可能快地修复此问题。详细内容请查看更新日志 。重点更新如下：  默认情况下，已启用Gradle增量编译。如果需要，您仍然可以按照文档描述禁用此功能。 Kotlin插件现已可以通过Gradle插件依赖添加使用。详情可参阅相关文档。 禁用使用带有接收器的函数类型作为JavaScript">
-<meta name="keywords" content="Kotlin">
+    <meta name="keywords" content="">
+    <meta name="description" content="一、区别String ：字符串常量StringBuffer ：字符串变量StringBuilder ：字符串变量 二、速度StringBuilder &amp;gt; StringBuffer &amp;gt; String 分析原因：  String类是不可变类，任何对String的改变都 会引发新的String对象的生成；  String类型进行改变的时候其实都等同于生成了一个新的 String 对象，然后将">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[译]Kotlin 1.1.1 is out">
-<meta property="og:url" content="https://kotlinandroid.net/2017/03/14/Kotlin 1.1.1 is out/index.html">
+<meta property="og:title" content="String、StringBuffer、StringBuilder的区别.md">
+<meta property="og:url" content="https://kotlinandroid.net/2017/07/06/String、StringBuffer、StringBuilder的区别-md/index.html">
 <meta property="og:site_name" content="KotlinAndroid">
-<meta property="og:description" content="今天我们发布了针对 Kotlin 1.1 的第一个bug修复更新。此更新的重点是解决导致错误代码生成的回归；我们希望尽可能快地修复此问题。详细内容请查看更新日志 。重点更新如下：  默认情况下，已启用Gradle增量编译。如果需要，您仍然可以按照文档描述禁用此功能。 Kotlin插件现已可以通过Gradle插件依赖添加使用。详情可参阅相关文档。 禁用使用带有接收器的函数类型作为JavaScript">
-<meta property="og:updated_time" content="2017-06-23T16:09:46.000Z">
+<meta property="og:description" content="一、区别String ：字符串常量StringBuffer ：字符串变量StringBuilder ：字符串变量 二、速度StringBuilder &amp;gt; StringBuffer &amp;gt; String 分析原因：  String类是不可变类，任何对String的改变都 会引发新的String对象的生成；  String类型进行改变的时候其实都等同于生成了一个新的 String 对象，然后将">
+<meta property="og:image" content="https://kotlinandroid.net/arts/kotlin_group.jpg">
+<meta property="og:updated_time" content="2017-07-06T16:10:27.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[译]Kotlin 1.1.1 is out">
-<meta name="twitter:description" content="今天我们发布了针对 Kotlin 1.1 的第一个bug修复更新。此更新的重点是解决导致错误代码生成的回归；我们希望尽可能快地修复此问题。详细内容请查看更新日志 。重点更新如下：  默认情况下，已启用Gradle增量编译。如果需要，您仍然可以按照文档描述禁用此功能。 Kotlin插件现已可以通过Gradle插件依赖添加使用。详情可参阅相关文档。 禁用使用带有接收器的函数类型作为JavaScript">
+<meta name="twitter:title" content="String、StringBuffer、StringBuilder的区别.md">
+<meta name="twitter:description" content="一、区别String ：字符串常量StringBuffer ：字符串变量StringBuilder ：字符串变量 二、速度StringBuilder &amp;gt; StringBuffer &amp;gt; String 分析原因：  String类是不可变类，任何对String的改变都 会引发新的String对象的生成；  String类型进行改变的时候其实都等同于生成了一个新的 String 对象，然后将">
+<meta name="twitter:image" content="https://kotlinandroid.net/arts/kotlin_group.jpg">
     
         <link rel="alternative" href="/atom.xml" title="KotlinAndroid" type="application/atom+xml">
     
@@ -169,7 +170,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">[译]Kotlin 1.1.1 is out</div>
+        <div class="flex-col header-title ellipsis">String、StringBuffer、StringBuilder的区别.md</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -191,15 +192,15 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">[译]Kotlin 1.1.1 is out</h1>
+        <h1 class="title">String、StringBuffer、StringBuilder的区别.md</h1>
         <h5 class="subtitle">
             
-                <time datetime="2017-03-14T12:29:00.000Z" itemprop="datePublished" class="page-time">
-  2017-03-14
+                <time datetime="2017-07-06T15:45:01.000Z" itemprop="datePublished" class="page-time">
+  2017-07-06
 </time>
 
 
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/学习资料/">学习资料</a></li></ul>
 
             
         </h5>
@@ -215,21 +216,21 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#如何更新"><span class="post-toc-text">如何更新</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一、区别"><span class="post-toc-text">一、区别</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二、速度"><span class="post-toc-text">二、速度</span></a></li></ol>
         </nav>
     </aside>
     
 
-<article id="post-Kotlin 1.1.1 is out"
+<article id="post-String、StringBuffer、StringBuilder的区别-md"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">[译]Kotlin 1.1.1 is out</h1>
+        <h1 class="post-card-title">String、StringBuffer、StringBuilder的区别.md</h1>
         <div class="post-meta">
-            <time class="post-time" title="2017年03月14日 20:29" datetime="2017-03-14T12:29:00.000Z"  itemprop="datePublished">2017-03-14</time>
+            <time class="post-time" title="2017年07月06日 23:45" datetime="2017-07-06T15:45:01.000Z"  itemprop="datePublished">2017-07-06</time>
 
             
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/官方动态/">官方动态</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/学习资料/">学习资料</a></li></ul>
 
 
 
@@ -243,15 +244,22 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p>今天我们发布了针对<strong> Kotlin 1.1 </strong>的第一个bug修复更新。此更新的重点是解决导致错误代码生成的回归；我们希望尽可能快地修复此问题。详细内容请查看<a href="https://github.com/JetBrains/kotlin/blob/1.1.1/ChangeLog.md" target="_blank" rel="external">更新日志</a> 。<br>重点更新如下：</p>
-<ul>
-<li>默认情况下，已启用Gradle增量编译。如果需要，您仍然可以按照文档描述禁用此功能。</li>
-<li>Kotlin插件现已可以通过Gradle插件依赖添加使用。详情可参阅相关文档。</li>
-<li>禁用使用带有接收器的函数类型作为JavaScript外部声明的参数类型。在此之前，传递给这些参数的lambdas没有被正确的参数调用，并且在这个问题上没有简单的解决方法，所以现在我们决定禁用这个功能。</li>
-</ul>
-<p>更新后的Kotlin <a href="https://marketplace.eclipse.org/content/kotlin-plugin-eclipse" target="_blank" rel="external">Eclipse</a> 和 <a href="http://plugins.netbeans.org/plugin/68590/kotlin" target="_blank" rel="external">NetBeans</a> 插件将支持Kotlin 1.1.1，所以您可以尽情享受Kotlin新版本的优点而无需关注IDE。</p>
-<h2 id="如何更新"><a href="#如何更新" class="headerlink" title="如何更新"></a>如何更新</h2><p>要更新IDEA插件，在菜单栏中依次选择 Tools | Kotlin | Configure Kotlin Plugin Update，然后点击“Check for updates now”按钮。另外，不要忘记在Maven和Gradle构建脚本中更新编译器和标准库版本</p>
-<p>命令行编译器可以从 <a href="https://github.com/JetBrains/kotlin/releases/tag/v1.1.1" target="_blank" rel="external">Github发布页面</a> 页面下载。<br>像往常一样，如果您在新版本中遇到任何问题，您可以在 <a href="https://discuss.kotlinlang.org/" target="_blank" rel="external">论坛</a> 中寻求帮助，在Slack(<a href="http://kotlinslackin.herokuapp.com/" target="_blank" rel="external">获取邀请</a>)、或者在<a href="https://youtrack.jetbrains.com/issues/KT" target="_blank" rel="external">问题追踪器</a>提出问题 。<br>让我们开始吧！</p>
+            <h3 id="一、区别"><a href="#一、区别" class="headerlink" title="一、区别"></a>一、区别</h3><p>String ：字符串常量<br>StringBuffer ：字符串变量<br>StringBuilder ：字符串变量</p>
+<h3 id="二、速度"><a href="#二、速度" class="headerlink" title="二、速度"></a>二、速度</h3><p>StringBuilder &gt; StringBuffer &gt; String</p>
+<p>分析原因：</p>
+<p> String类是不可变类，任何对String的改变都 会引发新的String对象的生成；</p>
+<p> String类型进行改变的时候其实都等同于生成了一个新的 String 对象，然后将指针指向新的 String 对象，所以经常改变内容的字符串最好不要用 String。</p>
+<p>而StringBuffer与StringBuilder就不一样了，他们是字符串变量，是可改变的对象，每当我们用它们对字符串做操作时，实际上是在一个对象上操作的，这样就不会像String一样创建一些而外的对象进行操作了，当然速度就快了。</p>
+<p>又因为StringBuilder是线程不安全的，StringBuffer是线程安全的，所以StringBuilder比StringBuffer要快。</p>
+<hr>
+<p>如果你有兴趣加入我们，请直接关注公众号 Kotlinandroid ，或者加 QQ 群：465280882</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/arts/kotlin_group.jpg" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
 
         </div>
 
@@ -259,12 +267,12 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-06-23T16:09:46.000Z" itemprop="dateUpdated">2017年6月24日 0:09</time>
+    最后更新时间：<time datetime="2017-07-06T16:10:27.000Z" itemprop="dateUpdated">2017年7月7日 0:10</time>
 </span><br>
 
 
         
-        转载请注明出处：<a href="https://blog.jetbrains.com/kotlin/2017/03/kotlin-1-1-1-is-out/ " target="_blank" rel="external">https://blog.jetbrains.com/kotlin/2017/03/kotlin-1-1-1-is-out/</a>
+        转载请注明出处：<a href="/2017/07/06/String、StringBuffer、StringBuilder的区别-md/ " target="_blank" rel="external">https://kotlinandroid.net/2017/07/06/String、StringBuffer、StringBuilder的区别-md/</a>
         
     </div>
     <footer>
@@ -275,12 +283,14 @@
 </blockquote>
 
         
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
 
 
         <div class="post-footer">
             
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Kotlin/">Kotlin</a></li></ul>
-
 
             
 <div class="page-share-wrap">
@@ -289,7 +299,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://kotlinandroid.net/2017/03/14/Kotlin 1.1.1 is out/&title=《[译]Kotlin 1.1.1 is out》 — KotlinAndroid&pic=https://kotlinandroid.net/img/kotlin_250x250.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://kotlinandroid.net/2017/07/06/String、StringBuffer、StringBuilder的区别-md/&title=《String、StringBuffer、StringBuilder的区别.md》 — KotlinAndroid&pic=https://kotlinandroid.net/img/kotlin_250x250.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -299,22 +309,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://kotlinandroid.net/2017/03/14/Kotlin 1.1.1 is out/&title=《[译]Kotlin 1.1.1 is out》 — KotlinAndroid&source=talk is cheap,show me the girl." data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://kotlinandroid.net/2017/07/06/String、StringBuffer、StringBuilder的区别-md/&title=《String、StringBuffer、StringBuilder的区别.md》 — KotlinAndroid&source=talk is cheap,show me the girl." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://kotlinandroid.net/2017/03/14/Kotlin 1.1.1 is out/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://kotlinandroid.net/2017/07/06/String、StringBuffer、StringBuilder的区别-md/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《[译]Kotlin 1.1.1 is out》 — KotlinAndroid&url=https://kotlinandroid.net/2017/03/14/Kotlin 1.1.1 is out/&via=https://kotlinandroid.net" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《String、StringBuffer、StringBuilder的区别.md》 — KotlinAndroid&url=https://kotlinandroid.net/2017/07/06/String、StringBuffer、StringBuilder的区别-md/&via=https://kotlinandroid.net" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://kotlinandroid.net/2017/03/14/Kotlin 1.1.1 is out/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://kotlinandroid.net/2017/07/06/String、StringBuffer、StringBuilder的区别-md/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -334,21 +344,14 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="waves-block waves-effect prev">
-      <a href="/2017/03/15/Kotlin 1.0.7 is out/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">[译]Kotlin 1.0.7 is out</h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2017/03/06/Kotlin 1.1 Event/" id="post-next" class="post-nav-link">
+      <a href="/2017/06/23/Kotlin/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">[译]Kotlin 1.1 Event</h4>
+        <h4 class="title">Kotlin</h4>
       </a>
     </div>
   
@@ -394,6 +397,31 @@
 
 </article>
 
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        Have a nice Kotlin!
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <ul class="reward-items">
+        
+        
+        <li>
+            <img src="/assets/img/wechat.jpg" title="微信打赏二维码" alt="微信打赏二维码">
+            <p>微信</p>
+        </li>
+        
+
+        
+        <li>
+            <img src="/assets/img/alipay.jpg" title="支付宝打赏二维码" alt="支付宝打赏二维码">
+            <p>支付宝</p>
+        </li>
+        
+    </ul>
+</div>
+
 
 
 </div>
@@ -436,7 +464,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://kotlinandroid.net/2017/03/14/Kotlin 1.1.1 is out/&title=《[译]Kotlin 1.1.1 is out》 — KotlinAndroid&pic=https://kotlinandroid.net/img/kotlin_250x250.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://kotlinandroid.net/2017/07/06/String、StringBuffer、StringBuilder的区别-md/&title=《String、StringBuffer、StringBuilder的区别.md》 — KotlinAndroid&pic=https://kotlinandroid.net/img/kotlin_250x250.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -446,22 +474,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://kotlinandroid.net/2017/03/14/Kotlin 1.1.1 is out/&title=《[译]Kotlin 1.1.1 is out》 — KotlinAndroid&source=talk is cheap,show me the girl." data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://kotlinandroid.net/2017/07/06/String、StringBuffer、StringBuilder的区别-md/&title=《String、StringBuffer、StringBuilder的区别.md》 — KotlinAndroid&source=talk is cheap,show me the girl." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://kotlinandroid.net/2017/03/14/Kotlin 1.1.1 is out/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://kotlinandroid.net/2017/07/06/String、StringBuffer、StringBuilder的区别-md/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《[译]Kotlin 1.1.1 is out》 — KotlinAndroid&url=https://kotlinandroid.net/2017/03/14/Kotlin 1.1.1 is out/&via=https://kotlinandroid.net" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《String、StringBuffer、StringBuilder的区别.md》 — KotlinAndroid&url=https://kotlinandroid.net/2017/07/06/String、StringBuffer、StringBuilder的区别-md/&via=https://kotlinandroid.net" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://kotlinandroid.net/2017/03/14/Kotlin 1.1.1 is out/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://kotlinandroid.net/2017/07/06/String、StringBuffer、StringBuilder的区别-md/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -472,7 +500,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACNUlEQVR42u3aS3KEMAxFUfa/abIACrhPMqm2fRl1JXTwYaDodxz4Oi/X3T3k/uud128dX1wyZMiYlnE+XrV7CO/5L/PnypAhYx8GCaD8cM+H5s8i98uQIUNGeg9J+3jIliFDhoxOEETpWqkkliFDhoxOEUvwpFjl6eAntbgMGTImZPAQ+f+fP5lvyJAhYyrGGV7PwZcfqzYquD2VDBkylmbwAMfTMjIkSNnoKTJkyFiawcvONID2C924hJYhQ8aiDP7I/gpFZ6niBSxDhowNGGlTng8g+YJFOn4YMHGVIUPGzzM6SxKdrIx86/nnt11DGTJkLMdIh5R8zWLUfJWnoTJkyFibwZeuOgtbtWBNUk8ZMmTsw+CFKx8G8NZ/LZTLkCFjB0atcVabkXIML2JRXStDhowlGHFLKyw+W/8N0vpbhgwZizLSFa50nYuE9c7ymQwZMvZk8Ib+GV611/SSIMqQIWNLRhzySuPMtIRGOyMyZMhYjpE2tkggTpM/Pkh4eboMGTK2YfDPpKBNB6LouHevTIYMGZsx0mWLUWyeXMqQIWNPRpqi1YrSscPRo59pypAh4+cZ/bZ+LVing8+XNFGGDBlLMwZE6/aYMx0n8LGEDBkyVmKkJWtt2Jn+Nn7fMmTI2IBRa3WlTbQ0+AbBXYYMGTLwQgYvU3lJ/GHAlSFDxqKM2koEORZvzN0WsTJkyFia0VmJ6LTJyPBgcLtNhgwZEzJapSMYZPbTzWFDTRkyZMzH+AMfhUHP3B7xiAAAAABJRU5ErkJggg==" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADKElEQVR42u3aQXLbMAwF0Nz/0sm2nYzZD4DpWMjTypNIIh+8gAHw4yO+Po/Xn/d8/5y8OXnD9xWra5UvbGxs7Iewc9J5gfM9Z16y9SRAiQUbGxt7K3uSWs5BzNc6hyP/y9mCjY2NjX0mnTfX23pe9mBjY2NjJ+xqKdJ7f/K2/5rAsLGxsd+enbf+k6d670zaSb1kiY2Njb2bfWsc+w6ff2S+jY2Njf3G7EniyVtOSTrJk9D8wsbGxt7E7jWMJg2gajMoD0q54YWNjY29gp08nCPLDfqroSl8DdjY2NiL2FXMpPVfLWySnVxIb9jY2NgPZ1cfzouNJHX1xrqTMumvvI2NjY29mt1rLU3wk6eq6RMbGxt7EztvxOSJqjokTkqI6h6StIeNjY29lZ0H5Vy6VNNeryCZl1LY2NjYO9i9Zk21JMjLmN7AoJpKsbGxsfex84KhV5DcSmbVoz8vRdjY2Ngr2PnRmSQQ+aYnDay8wfSP7xkbGxt7KTtPadX/9lpUedM/Dxk2Njb2PnbeWO+VFr1V8oInL59GG8LGxsZ+Y3a1fdP7PX/rSGXv0M/LvI2NjY39cHaylQkgLx7yMiZ5c743bGxs7Keze6TqVvJio3pP7+AONjY29j52NcFUBwC9UqSaCAujAmxsbOxF7F4Rki9TLT/mOynsBxsbG3sFO3ksb/dPSpdeyZGHoJwhsbGxsR/F7hUM1Z/++TGdJDSTZImNjY29iZ0MBuYD4ByWN7l6g2psbGzsfez81b3jlXkLqXekMj+aiY2Njb2VXU0n0QB1/PdeCC4EAhsbG/ux7CQS8wFAchyzmtiqTahovo2NjY39cHa+ufyePE32Rrm9rwobGxt7H7u6QC/x9IYQE/zLtIeNjY29gv1ZvHrtoUm6qt4ZDTywsbGxF7EnP+t7zfq8IKkGtHqQCBsbG3sTuzrQvVUYnL+HPMTNBIaNjY29jn1rbJActamCJ+OBl89iY2Nj/2J2b2DQ22g1jSXPYmNjY2PfCkpSkNwKKzY2NvZvYE8OWfYGtJMiJx8hv1wdGxsbexF73r6vDl+rqag6YE6KE2xsbOwV7C8+4sRw46pu2AAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 
@@ -480,7 +508,7 @@
 
     <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
 <script>
-var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
 
 
 
